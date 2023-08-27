@@ -9,7 +9,7 @@ const PracticeForm = () => {
       <h1 className="practiceFormHeader">how can we help you?</h1>
       <hr className="practiceFormHR" />
 
-      <div className="consultingDiv">
+      <div className="consultingDiv3">
         <div>
           <p className="consultingParPurple">
             Call us 24/7 at (888)123-4567 or fill out the form.

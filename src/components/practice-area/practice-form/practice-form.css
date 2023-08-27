@@ -1,11 +1,12 @@
 .practiceFormDiv {
-  padding: 80px 156px;
+  /* padding: 80px 156px; */
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.consultingDiv {
+.consultingDiv3 {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1.3fr;
@@ -51,7 +52,7 @@
   text-transform: capitalize;
   margin-top: 20px;
 }
-.inputDiv {
+/* .inputDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 37.65px;
@@ -94,7 +95,7 @@
 }
 .btnDiv {
   margin-top: 28.24px;
-}
+} */
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .practiceFormDiv {

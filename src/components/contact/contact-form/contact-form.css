@@ -41,7 +41,7 @@
   text-transform: capitalize;
   margin-top: 20px;
 }
-.inputDiv {
+/* .inputDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 37.65px;
@@ -84,7 +84,7 @@
 }
 .btnDiv {
   margin-top: 28.24px;
-}
+} */
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .consultingDiv {

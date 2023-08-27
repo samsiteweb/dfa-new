@@ -65,7 +65,7 @@
   font-style: normal;
   font-weight: 600;
   text-transform: capitalize;
-} */
+}
 .textarea {
   display: flex;
   width: 100%;
@@ -86,7 +86,7 @@
 }
 .btnDiv {
   margin-top: 28.24px;
-}
+} */
 
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {

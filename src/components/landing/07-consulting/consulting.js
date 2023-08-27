@@ -26,10 +26,10 @@ const Consulting = () => {
       <div className="formDiv">
         <form>
           <div className="inputDiv">
-            <input type="text" placeholder="your name*" className="input2" />
-            <input type="text" placeholder="your email*" className="input2" />
-            <input type="text" placeholder="your phone*" className="input2" />
-            <input type="text" placeholder="address" className="input2" />
+            <input type="text" placeholder="your name*" className="input" />
+            <input type="text" placeholder="your email*" className="input" />
+            <input type="text" placeholder="your phone*" className="input" />
+            <input type="text" placeholder="address" className="input" />
           </div>
           <textarea className="textarea">your message*</textarea>
           <div className="btnDiv">

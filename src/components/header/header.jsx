@@ -44,25 +44,39 @@ const Header = () => {
         <nav className="nav">
           <ul className="list">
             <li className="item">
-              <a className="link">company</a>
+              <a href="/" className="link">
+                home
+              </a>
             </li>
             <li className="item">
-              <a className="link">about</a>
+              <a href="/about" className="link">
+                about
+              </a>
             </li>
             <li className="item">
-              <a className="link">practice area</a>
+              <a href="/practice-area" className="link">
+                practice area
+              </a>
             </li>
             <li className="item">
-              <a className="link">ESG</a>
+              <a href="/esg" className="link">
+                ESG
+              </a>
             </li>
             <li className="item">
-              <a className="link">team</a>
+              <a href="/team" className="link">
+                team
+              </a>
             </li>
             <li className="item">
-              <a className="link">resources</a>
+              <a href="/esg/all-resources" className="link">
+                resources
+              </a>
             </li>
             <li className="item">
-              <a className="link">contacts</a>
+              <a href="/contact" className="link">
+                contacts
+              </a>
             </li>
           </ul>
         </nav>

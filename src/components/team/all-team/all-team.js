@@ -101,7 +101,7 @@ const AllTeam = () => {
 
       <Experience />
 
-      <div className="practiceFormDiv2">
+      <div className="practiceFormDiv">
         <h1 className="practiceFormHeader">We  are a call/ Message away!</h1>
 
         <div className="consultingDiv2">
@@ -120,21 +120,21 @@ const AllTeam = () => {
               libero et velit interdum, ac liquet odio mattis.”
             </p>
           </div>
-          <div className="formDiv2">
+          <div className="formDiv">
             <form>
               <div className="inputDiv">
-                <input type="text" placeholder="your name*" className="input2" />
+                <input type="text" placeholder="your name*" className="input" />
                 <input
                   type="text"
                   placeholder="your email*"
-                  className="input2"
+                  className="input"
                 />
                 <input
                   type="text"
                   placeholder="your phone*"
-                  className="input2"
+                  className="input"
                 />
-                <input type="text" placeholder="address" className="input2" />
+                <input type="text" placeholder="address" className="input" />
               </div>
               <textarea className="textarea">your message*</textarea>
               <div className="btnDiv">
