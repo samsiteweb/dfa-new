@@ -1,0 +1,79 @@
+.helpContainer {
+  padding: 39px 156px;
+  background: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HR {
+  width: 76px;
+  border: 1px solid #828282;
+}
+.gridedGap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 65px;
+}
+.helpCard {
+  display: flex;
+  gap: 15.74px;
+  align-items: flex-start;
+}
+.helpCard2, .helpCard3, .helpCard4 {
+  display: flex;
+  gap: 15.74px;
+  margin-top: 20px;
+}
+.helpImg {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  border: 2.252px solid #9338b6;
+}
+.helpHeader {
+  color: #9338b6;
+  font-family: playfair;
+  font-size: 20.984px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.paragragh {
+  color: #333;
+  font-family: poppins;
+  font-style: normal;
+  text-align: left;
+  font-size: 12.241px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.helpHR {
+  width: 30.602px;
+  margin: 5px 0;
+  border: 1px solid #828282;
+}
+
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .helpContainer {
+    padding: 39px 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .helpContainer {
+    padding: 39px 20px;
+  }
+  .gridedGap {
+    display: block;
+    margin-top: 5px;
+  }
+  .helpCard {
+    margin-top: 20px;
+  }
+}

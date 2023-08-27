@@ -1,0 +1,22 @@
+.buttonContainer {
+  display: flex;
+  width: fit-content;
+  padding: 10px 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #9b51e0;
+  cursor: pointer;
+
+  color: #fff;
+  font-family: poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.buttonContainer:hover {
+  background: #351950;
+}

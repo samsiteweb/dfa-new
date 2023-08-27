@@ -1,0 +1,134 @@
+.aboutFounderContainer {
+  padding: 80px 156px;
+}
+.aboutFounderTop {
+  display: flex;
+  gap: 70px;
+}
+.founderImg {
+  width: 552px;
+  height: 521px;
+}
+.aboutFounderDetailsDiv {
+  background: #f7f8f9;
+  padding: 16px 20px;
+  position: relative;
+}
+.founderSub {
+  color: #333;
+  font-family: poppins;
+  font-size: 20.203px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.founderName {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 43.181px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.founderHR {
+  width: 73.768px;
+  border: 1px solid #80319f;
+  margin-bottom: 30px;
+}
+.founderDetailsProper {
+  color: #333;
+  font-family: poppins;
+  font-size: 20.203px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: left;
+  margin-top: 20px;
+}
+.socialsDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
+/* .aboutFounderBottom {} */
+.founderSkills {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 72px;
+}
+.founderSkillsHR {
+  width: 41px;
+  border: 1px solid #80319f;
+}
+.founderSkillsP {
+  color: #333;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .aboutFounderTop {
+    display: block;
+  }
+  .founderImg {
+    width: 100%;
+    height: auto;
+  }
+  .aboutFounderDetailsDiv {
+    margin-top: 60px;
+    height: 100%;
+  }
+  .socialsDiv {
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .aboutFounderContainer {
+    padding: 80px;
+  }
+  .aboutFounderTop {
+    display: block;
+  }
+  .founderImg {
+    width: 100%;
+    height: auto;
+  }
+  .aboutFounderDetailsDiv {
+    margin-top: 60px;
+    height: 100%;
+  }
+  .socialsDiv {
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutFounderContainer {
+    padding: 40px 20px;
+  }
+  .aboutFounderTop {
+    display: block;
+  }
+  .founderImg {
+    width: 100%;
+    height: auto;
+  }
+  .aboutFounderDetailsDiv {
+    margin-top: 60px;
+    height: 100%;
+  }
+  .socialsDiv {
+    position: relative;
+    margin-top: 40px;
+  }
+}

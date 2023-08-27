@@ -1,0 +1,117 @@
+.consultingDiv {
+  padding: 151px 156px;
+}
+.consultingDivInner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
+}
+.consultingP {
+  color: #333;
+  font-family: poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+.consultingH1 {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: left;
+}
+.consultingHR {
+  width: 41px;
+  height: 0px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #80319f;
+}
+.consultingPar {
+  color: #333;
+  font-family: poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.inputDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 37.65px;
+}
+.input {
+  outline: none;
+  display: flex;
+  width: 100%;
+  height: 48.235px;
+  padding: 9.412px;
+  align-items: center;
+  gap: 9.412px;
+  border: 1.176px solid var(--primary-100, #dcbaea);
+}
+.input::placeholder {
+  color: #333;
+  font-family: Poppins;
+  font-size: 14.118px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.textarea {
+  display: flex;
+  width: 100%;
+  height: 168.235px;
+  padding: 9.412px;
+  align-items: flex-start;
+  gap: 9.412px;
+  border: 1.176px solid #dcbaea;
+  margin-top: 28.24px;
+  outline: none;
+
+  color: #333;
+  font-family: Poppins;
+  font-size: 14.118px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.btnDiv {
+  margin-top: 28.24px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .consultingDiv {
+    padding: 151px 156px;
+    display: block;
+  }
+  .formDiv {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .consultingDiv {
+    padding: 116px 80px;
+    display: block;
+  }
+  .formDiv {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .consultingDiv {
+    padding: 60px 20px;
+    display: block;
+  }
+  .formDiv {
+    margin-top: 50px;
+  }
+}

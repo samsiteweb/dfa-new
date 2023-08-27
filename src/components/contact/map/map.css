@@ -1,0 +1,8 @@
+.mapContainer {
+  padding: 116px 156px;
+}
+.mapImg {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}

@@ -1,0 +1,63 @@
+.needContainer {
+  display: flex;
+  gap: 32px;
+  padding: 112px 156px;
+}
+.needImg {
+  width: 546px;
+  height: 422px;
+}
+.needHeader {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+.needP {
+  margin: 25px 0;
+  text-align: left;
+}
+.buttonDivNeed {
+  margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .needContainer {
+    display: block;
+  }
+  .needImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .needContainer {
+    padding: 112px 80px;
+  }
+  .needContainer {
+    display: block;
+  }
+  .needImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .needContainer {
+    padding: 112px 20px;
+  }
+  .needContainer {
+    display: block;
+  }
+  .needImg {
+    width: 100%;
+    height: auto;
+  }
+}

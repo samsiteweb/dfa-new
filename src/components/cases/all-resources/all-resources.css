@@ -1,0 +1,106 @@
+.AllResourcesDiv {
+  padding: 116px 156px;
+}
+.allResourcesHeadDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.allResourcesHead {
+  color: #310c4b;
+  text-align: center;
+  font-family: playfair;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.allResourcesHR {
+  width: 41px;
+  border: 1px solid #80319f;
+}
+.AllResourcesinner {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+  margin-top: 78px;
+}
+.resourcesImg {
+  width: 576px;
+  height: 673px;
+  border-radius: 16px 0px 0px 16px;
+}
+.allResourcesTitle {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.allResourcesPar {
+  color: #310c4b;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin-top: 26px;
+}
+.allResourcesBtnDiv {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .AllResourcesDiv {
+    padding: 116px 80px;
+  }
+  .AllResourcesinner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 36px;
+  }
+  .resourcesImg {
+    width: 100%;
+    height: 673px;
+  }
+  .allResourcesPar {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .AllResourcesDiv {
+    padding: 116px 80px;
+  }
+  .AllResourcesinner {
+    display: block;
+  }
+  .resourcesImg {
+    width: 100%;
+    height: auto;
+  }
+  .allResourcesTitle {
+    margin-top: 26px;
+  }
+  .allResourcesPar {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AllResourcesDiv {
+    padding: 80px 20px;
+  }
+  .AllResourcesinner {
+    display: block;
+  }
+  .resourcesImg {
+    width: 100%;
+    height: auto;
+  }
+  .allResourcesTitle {
+    margin-top: 26px;
+  }
+  .allResourcesPar {
+    text-align: left;
+  }
+}
