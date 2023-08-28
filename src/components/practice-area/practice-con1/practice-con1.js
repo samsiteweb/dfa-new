@@ -63,25 +63,25 @@ const PracticeCon1 = () => {
 
       <div className="coloredCardDiv">
         <ul className="slimCardUL">
-          <div className="slimCardLI">
+          <div className="slimCardLI2">
             <li>Legal advisory and consultancy</li>
           </div>
-          <li className="slimCardLI">Contracts & Bespoke Agreements</li>
-          <li className="slimCardLI">Start Up & Technology Law</li>
-          <li className="slimCardLI">Employment Law</li>
-          <li className="slimCardLI">Data Privacy</li>
-          <li className="slimCardLI">Regulatory & enforcement </li>
-          <li className="slimCardLI">Antitrust/Competition Law</li>
-          <li className="slimCardLI">Intellectual Property </li>
-          <li className="slimCardLI">Transactions & Projects</li>
-          <li className="slimCardLI">
+          <li className="slimCardLI2">Contracts & Bespoke Agreements</li>
+          <li className="slimCardLI2">Start Up & Technology Law</li>
+          <li className="slimCardLI2">Employment Law</li>
+          <li className="slimCardLI2">Data Privacy</li>
+          <li className="slimCardLI2">Regulatory & enforcement </li>
+          <li className="slimCardLI2">Antitrust/Competition Law</li>
+          <li className="slimCardLI2">Intellectual Property </li>
+          <li className="slimCardLI2">Transactions & Projects</li>
+          <li className="slimCardLI2">
             Corporate Governance & Board Advisory/Services (Evaluation &
             Trainings)
           </li>
-          <li className="slimCardLI">Case Assessment/Review</li>
-          <li className="slimCardLI">Commercial Dispute Resolution </li>
-          <li className="slimCardLI">Legal Risk Management </li>
-          <li className="slimCardLI">Legal Risk Management </li>
+          <li className="slimCardLI2">Case Assessment/Review</li>
+          <li className="slimCardLI2">Commercial Dispute Resolution </li>
+          <li className="slimCardLI2">Legal Risk Management </li>
+          <li className="slimCardLI2">Legal Risk Management </li>
         </ul>
       </div>
     </div>

@@ -22,8 +22,8 @@
   margin-top: 87px;
 }
 .slimCardUL {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20.5px;
 }
@@ -33,7 +33,18 @@
   background: #e486be;
   width: fit-content;
   list-style-type: none;
-
+  color: #333;
+  font-family: poppins;
+  font-size: 20.486px;
+  font-weight: 400;
+  letter-spacing: 0.171px;
+}
+.slimCardLI2 {
+  padding: 10.243px;
+  border-radius: 6.829px;
+  background: #C58CDB;
+  width: fit-content;
+  list-style-type: none;
   color: #333;
   font-family: poppins;
   font-size: 20.486px;
@@ -60,7 +71,7 @@
   .slimCardUL {
     display: block;
   }
-  .slimCardLI {
+  .slimCardLI, .slimCardLI2 {
     margin-bottom: 30px;
   }
 }

@@ -23,7 +23,7 @@ const ContactForm = () => {
               <input type="text" placeholder="your phone*" className="inputTag" />
               <input type="text" placeholder="address" className="inputTag" />
             </div>
-            <textarea className="messageInput">your message*</textarea>
+            <textarea placeholder="your message*" className="messageInput"></textarea>
             <div className="btnDiv">
               <Button>send message</Button>
             </div>
