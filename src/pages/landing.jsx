@@ -1,32 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import Banner from '../components/landing/01-banner/banner';
-import Checkin from '../components/landing/02-checkin/checkin';
-import Need from '../components/landing/03-need/need';
-import Help from '../components/landing/04-help/help';
-import Testimonials from '../components/landing/05-testimonials/testimonials';
-import Experience from '../components/landing/06-experience/experience';
-import Consulting from '../components/landing/07-consulting/consulting';
-import Pricing from '../components/landing/09-pricing/pricing';
-import Attorneys from '../components/landing/08-atourneys/attorneys';
-import Article from '../components/landing/10-article/article';
-
+import Banner from "../components/landing/01-banner/banner";
+import Checkin from "../components/landing/02-checkin/checkin";
+import LegalExperience from "../components/landing/03-legal-experience/legal-experience";
+import Need from "../components/landing/03-need/need";
+import Help from "../components/landing/04-help/help";
+import FeaturedAttorney from "../components/landing/03-feature/feature";
+import Pricing from "../components/pricing/pricing";
+import ContactForm from "../components/contact-form/contact-form";
+import Article from "../components/article/article";
 
 const Landing = () => {
   return (
     <div>
       <Banner />
       <Checkin />
-      <Need />
+      <LegalExperience />
       <Help />
-      <Testimonials />
-      <Experience />
-      <Consulting />
-      <Attorneys />
+      <Need />
+      <FeaturedAttorney />
       <Pricing />
+      <ContactForm />
       <Article />
     </div>
-  )
-}
+  );
+};
 
 export default Landing;

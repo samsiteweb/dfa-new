@@ -1,7 +1,8 @@
 .needContainer {
   display: flex;
+  align-items: center;
   gap: 32px;
-  padding: 112px 156px;
+  padding: 116px 156px;
 }
 .needImg {
   width: 546px;

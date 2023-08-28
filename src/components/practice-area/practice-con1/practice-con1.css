@@ -1,0 +1,66 @@
+.PracticeCon1Div {
+  padding: 80px 156px 116px 156px;
+}
+.PracticeCon1H2 {
+  color: #310c4b;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 60px;
+}
+.practiceConImg {
+  width: 100%;
+  height: auto;
+  margin-top: 38px;
+}
+.PracticeCon1Par {
+  margin: 75px 0 40px 0;
+  text-align: left;
+}
+.coloredCardDiv {
+  margin-top: 87px;
+}
+.slimCardUL {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20.5px;
+}
+.slimCardLI {
+  padding: 10.243px;
+  border-radius: 6.829px;
+  background: #e486be;
+  width: fit-content;
+  list-style-type: none;
+
+  color: #333;
+  font-family: poppins;
+  font-size: 20.486px;
+  font-weight: 400;
+  letter-spacing: 0.171px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .PracticeCon1Div {
+    padding: 0 156px 116px 156px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .PracticeCon1Div {
+    padding: 0 80px 116px 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .PracticeCon1Div {
+    padding: 0 20px 116px 20px;
+  }
+  .slimCardUL {
+    display: block;
+  }
+  .slimCardLI {
+    margin-bottom: 30px;
+  }
+}

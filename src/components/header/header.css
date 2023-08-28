@@ -1,7 +1,7 @@
 .headerDiv {
   display: flex;
   align-items: center;
-  padding: 10px 80px;
+  padding: 10px 156px;
   background: #331440;
 }
 .logoImg {
@@ -30,9 +30,15 @@
 
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .headerDiv {
+    padding: 20px 156px;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .headerDiv {
+    padding: 20px 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -83,7 +89,7 @@
     transition: all 0.8s;
   }
   .list {
-    margin: 70px 0 0 198px;
+    margin: 70px 0 0 200px;
     list-style: none;
     text-align: left;
     width: 100%;
@@ -167,4 +173,13 @@
     top: 0;
     transform: rotate(-135deg);
   } 
+}
+
+@media only screen and (max-width: 300px) and (min-width: 120px) {
+  .headerDiv, .mobileNav, .nav, .list {
+    overflow-x: hidden;
+  }
+  .list {
+    margin: 70px 0 0 110px;
+  }
 }

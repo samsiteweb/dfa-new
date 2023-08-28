@@ -1,13 +1,30 @@
-.helpContainer {
-  padding: 39px 156px 116px 156px;
+.AboutPracticeDiv {
+  
+}
+.aboutgreyBG {
   background: #f7f8f9;
+}
+.section {
+  padding: 80px 156px 116px 156px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.section {
-  padding: 39px 0 78px 0;
+.section2 {
+  padding: 0 0 78px 0;
+  padding: 39px 156px 116px 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPractDiv {
+  padding: 80px 156px 116px 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sectionOneFlex {
   display: flex;
@@ -83,24 +100,42 @@
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .helpContainer {
-    padding: 39px 80px;
+  .section {
+    padding: 80px;
+  }
+  .section2 {
+    padding: 80px;
+  }
+  .aboutPractDiv {
+    padding: 80px;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .helpContainer {
-    padding: 39px 40px;
+  .section {
+    padding: 80px 40px;
+  }
+  .section2 {
+    padding: 80px 40px;
+  }
+  .aboutPractDiv {
+    padding: 80px 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .helpContainer {
-    padding: 20px;
+  .section {
+    padding: 80px 20px;
+  }
+  .section2 {
+    padding: 80px 20px;
+  }
+  .aboutPractDiv {
+    padding: 80px 20px;
   }
   .gridedGap {
     display: block;
-    margin-top: 80px;
+    margin-top: 120px;
   }
   .helpCard {
     margin-top: 20px;

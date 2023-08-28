@@ -2,76 +2,103 @@ import React from "react";
 import "./about-founder.css";
 
 import FounderImg from "../../../assets/img/founder.jpg";
-import Twitter from "../../../assets/icons/socials/twitter.svg";
-import Linkedin from "../../../assets/icons/socials/linkedin.svg";
-import Instagram from "../../../assets/icons/socials/instagram.svg";
-import Google from "../../../assets/icons/socials/google.svg";
-import Youtube from "../../../assets/icons/socials/youtube.svg";
 
 const AboutFounder = () => {
   return (
     <div className="aboutFounderContainer">
       <div className="aboutFounderTop">
+        <p style={{ color: "#828282" }}>WELCOME TO DFA SOLICITORS</p>
+        <h1 style={{ color: "#310C4B" }}>Firm Overview</h1>
+        <hr className="HR" />
+      </div>
+
+      <div className="aboutFounderMiddle">
         <div>
           <img src={FounderImg} className="founderImg" alt="" />
         </div>
         <div className="aboutFounderDetailsDiv">
-          <p className="founderSub">About our Leader</p>
-          <h2 className="founderName">Darcy Alec</h2>
-          <hr className="founderHR" />
-
-          <p className="founderDetailsProper">Positon: Senior Lawyer</p>
-          <p className="founderDetailsProper">
-            Practice Areas: Family Lawyer, Criminal Defence, Personal Injury
+          <h4 className="founderName">Mrs. Abidemi Ademola</h4>
+          <p className="founderPosition">Senior Partner</p>
+          <p className="founderIntro">
+            a highly skilled and well experienced Corporate Counsel, Governance
+            Professional and Executive Business Leader with over 27 years of
+            Commercial Law and Corporate Governance practice in Nigeria and West
+            Africa. Passionately driven by a personal purpose to build a lasting
+            legacy by shaping capability in Law, Governance, Risk and
+            Compliance,{" "}
           </p>
-          <p className="founderDetailsProper">Experience: 10 Years </p>
-          <p className="founderDetailsProper">Phone: 0800.123.456 </p>
-          <p className="founderDetailsProper">Email: youremail@gmail.com </p>
-          <p className="founderDetailsProper">Fax: 6985231456 </p>
-
-          <div className="socialsDiv">
-            <img src={Twitter} className="social-img" alt="" />
-            <img src={Linkedin} className="social-img" alt="" />
-            <img src={Instagram} className="social-img" alt="" />
-            <img src={Google} className="social-img" alt="" />
-            <img src={Youtube} className="social-img" alt="" />
-          </div>
         </div>
       </div>
 
       <div className="aboutFounderBottom">
+        <p className="founderIntroContd">
+          her forte is to proactively identify legal, regulatory, compliance and
+          corporate governance risks and develop innovative
+          mitigations/solutions to enable seamless operations and
+          sustainability. Abidemi has been instrumental in building strong legal
+          teams and delivering several epic legal transactions and projects
+          across West Africa.{" "}
+        </p>
         <h4 className="founderSkills">Personal Experience</h4>
         <hr className="founderSkillsHR" />
         <p className="founderSkillsP">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text.
-          <br /> <br />
-          All the Lorem Ipsum generators on the Internet tend to repeat
-          predefined chunks as necessary, making this the first true generator
-          on the Internet. It uses a dictionary of over 200 Latin words,
+          She has supported Boards in Nigeria, Ghana and Francophone Africa for
+          over 10 years to implement world class Corporate Governance practices
+          and processes with positive impact on Board effectiveness. In
+          recognition of her wholesome contribution at Unilever, she was
+          appointed as an Executive Director of Unilever Nigeria Plc. a positive
+          culmination of her stellar in-house Counsel career. Her decision to
+          set up DFA Solicitors is well aligned with her purpose to build a
+          lasting legacy and leverage the opportunity for greater impact.
         </p>
 
         <h4 className="founderSkills">Education</h4>
         <hr className="founderSkillsHR" />
-        <p className="founderSkillsP">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text.
-          <br /> <br />
-          All the Lorem Ipsum generators on the Internet tend to repeat
-          predefined chunks as necessary, making this the first true generator
-          on the Internet. It uses a dictionary of over 200 Latin words,
-        </p>
+        <ul>
+          <li className="founderSkillsP">
+            Abidemi holds a Bachelor of Laws degree from the Obafemi Awolowo
+            University, Ile-Ife.
+          </li>
+          <li className="founderSkillsP">
+            a Master of Laws from the University of Lagos, Akoka and an MBA
+            Leadership from Walden University, United States.
+          </li>
+          <li className="founderSkillsP">
+            She is a Fellow of the Institute of Chartered Secretaries and
+            Administrators of Nigeria (ICSAN) and was a member of ICSAN
+            Governing Council in 2022/2023.{" "}
+          </li>
+          <li className="founderSkillsP">
+            She is also a Fellow of the WIMBOARD Institute, a WIMBIZ/IE
+            University, Madrid Executive Education Programme for Women on
+            Boards.
+          </li>
+        </ul>
 
-        <h4 className="founderSkills">Language</h4>
+        <h4 className="founderSkills">membership</h4>
+        <hr className="founderSkillsHR" />
+        <ul>
+          <li className="founderSkillsP">
+            Abidemi is a member of the Nigerian Bar Association, the Society for
+            Corporate Governance and the Institute of Directors, Nigeria.{" "}
+          </li>
+          <li className="founderSkillsP">
+            She was the pioneer chairperson of the Corporate Counsel Committee
+            of the NBA Section on Business Law{" "}
+          </li>
+          <li className="founderSkillsP">
+            She is currently an Officer of the Corporate Counsel Committee of
+            the NBA Women Forum.
+          </li>
+        </ul>
+
+        <h4 className="founderSkills">Publications</h4>
         <hr className="founderSkillsHR" />
         <p className="founderSkillsP">
-          French(fluent), English(fluent), Greek , chinese.
+          Abidemi has authored articles and co-authored books on Law & Corporate
+          Governance. She is a trained trainer, an international speaker and is
+          currently on the training faculty of the Institute of Directors,
+          Nigeria.
         </p>
       </div>
     </div>

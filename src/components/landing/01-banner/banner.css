@@ -3,6 +3,32 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: -9;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+      114deg,
+      rgba(57, 0, 98, 0.7) 0%,
+      rgba(58, 4, 52, 0.58) 35.42%,
+      rgba(190, 15, 57, 0) 100%
+    ),
+    no-repeat; */
+    background: linear-gradient(
+      114deg,
+      rgba(57, 0, 98, 0.89) 0%,
+      rgba(58, 4, 52, 0.945) 35.42%,
+      rgba(190, 15, 56, 0.555) 100%
+    ),
+    no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-slide {
   width: 100%;
@@ -14,51 +40,37 @@
 .carousel-slide.active {
   display: block;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-      114deg,
-      rgba(57, 0, 98, 0.7) 0%,
-      rgba(58, 4, 52, 0.58) 35.42%,
-      rgba(190, 15, 57, 0) 100%
-    ),
-    no-repeat;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
 .carousel-details {
   text-align: center;
   color: white;
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
   transform: translateY(-50%);
-  padding: 0 80px;
 }
 .carousel-details-Par {
   color: #f2f2f2;
   font-family: poppins;
-  font-size: 24.622px;
+  font-size: 29.113px;
   font-style: normal;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
   text-transform: capitalize;
 }
 .carousel-details-H2 {
   width: 760.892px;
   color: #f2f2f2;
   font-family: playfair;
-  font-size: 66px;
+  font-size: 70.945px;
   font-weight: 800;
   text-transform: capitalize;
   margin: 33px 0;
-  text-align: left;
+  text-align: center;
+}
+.BannerbtnDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-dots-banner {
   display: flex;
@@ -112,6 +124,6 @@
   .carousel-details-H2 {
     width: 100%;
     font-size: 42px;
-    margin: -30px 0 15px 0;
+    margin: 0 0 15px 0;
   }
 }

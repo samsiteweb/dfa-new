@@ -1,37 +1,52 @@
 .aboutFounderContainer {
-  padding: 80px 156px;
+  padding: 116px 156px;
 }
 .aboutFounderTop {
   display: flex;
-  gap: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutFounderMiddle {
+  display: flex;
+  gap: 26px;
+  margin-top: 60px;
 }
 .founderImg {
-  width: 552px;
-  height: 521px;
+  width: 609px;
+  height: 542.093px;
 }
 .aboutFounderDetailsDiv {
-  background: #f7f8f9;
-  padding: 16px 20px;
+  padding: 0 20px;
   position: relative;
-}
-.founderSub {
-  color: #333;
-  font-family: poppins;
-  font-size: 20.203px;
-  font-weight: 300;
-  text-transform: capitalize;
 }
 .founderName {
   color: #310c4b;
   font-family: playfair;
-  font-size: 43.181px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: capitalize;
+  width: 373px;
 }
-.founderHR {
-  width: 73.768px;
-  border: 1px solid #80319f;
-  margin-bottom: 30px;
+.founderPosition {
+  color: #4f4f4f;
+  text-align: justify;
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 38px;
+}
+.founderIntro {
+  color: #000;
+text-align: justify;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 38px; /* 45.12px */
+text-transform: capitalize;
+text-align: left;
 }
 .founderDetailsProper {
   color: #333;
@@ -42,20 +57,23 @@
   text-align: left;
   margin-top: 20px;
 }
-.socialsDiv {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 20px;
+.founderIntroContd {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px; /* 45.12px */
+  text-transform: capitalize;
+  text-align: left;
 }
 
 /* .aboutFounderBottom {} */
 .founderSkills {
   color: #310c4b;
   font-family: playfair;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   text-transform: capitalize;
   margin-top: 72px;
@@ -67,14 +85,16 @@
 .founderSkillsP {
   color: #333;
   font-family: poppins;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 300;
   text-transform: capitalize;
   margin-top: 20px;
+  line-height: 38px;
+  text-align: left;
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .aboutFounderTop {
+  .aboutFounderMiddle {
     display: block;
   }
   .founderImg {
@@ -82,20 +102,16 @@
     height: auto;
   }
   .aboutFounderDetailsDiv {
-    margin-top: 60px;
-    height: 100%;
-  }
-  .socialsDiv {
-    position: relative;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .aboutFounderContainer {
-    padding: 80px;
+    padding: 116px 80px;
   }
-  .aboutFounderTop {
+  .aboutFounderMiddle {
     display: block;
   }
   .founderImg {
@@ -103,20 +119,16 @@
     height: auto;
   }
   .aboutFounderDetailsDiv {
-    margin-top: 60px;
-    height: 100%;
-  }
-  .socialsDiv {
-    position: relative;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   .aboutFounderContainer {
-    padding: 40px 20px;
+    padding: 116px 20px;
   }
-  .aboutFounderTop {
+  .aboutFounderMiddle {
     display: block;
   }
   .founderImg {
@@ -124,11 +136,13 @@
     height: auto;
   }
   .aboutFounderDetailsDiv {
-    margin-top: 60px;
-    height: 100%;
+    margin-top: 30px;
+    padding: 0;
   }
-  .socialsDiv {
-    position: relative;
-    margin-top: 40px;
+  .founderName {
+    width: 100%;
+  }
+  ul {
+    padding: 0 25px;
   }
 }

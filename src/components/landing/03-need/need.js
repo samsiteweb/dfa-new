@@ -1,5 +1,5 @@
 import React from "react";
-import "./need.css";
+import "./need.css"
 
 import Image from "../../../assets/img/Picture Frame.jpg";
 import Button from "../../button/button";

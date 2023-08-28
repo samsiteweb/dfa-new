@@ -56,7 +56,9 @@ const Banner = () => {
             <div className="carousel-details">
               <p className='carousel-details-Par'>{slide.details}</p>
               <h2 className='carousel-details-H2'>{slide.header}</h2>
+              <div className='BannerbtnDiv'>
               <Button>contact us now</Button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,88 @@
+.featureDiv {
+  padding: 116px 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featureDetailsDiv {
+  margin-top: 48px;
+}
+/* .featuring {} */
+.lawyerImg {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.featureName {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 60px;
+}
+.featurePosition {
+  color: #4f4f4f;
+  text-align: justify;
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.featureDetailsPar {
+  color: #000;
+  text-align: justify;
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+.featureDetailsDivInner {
+  margin-top: 38px;
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+.lineDiv {
+  display: flex;
+  gap: 18px;
+}
+.lineImg {
+  width: 114px;
+  height: 8px;
+}
+.lineImgLight {
+  width: 100%;
+  height: 8px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .lineDiv {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .featureDiv {
+    padding: 116px 80px;
+  }
+  .lineDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featureDiv {
+    padding: 116px 20px;
+  }
+  .featureName,
+  .featureDetailsPar {
+    text-align: left;
+  }
+  .lineDiv {
+    display: none;
+  }
+}

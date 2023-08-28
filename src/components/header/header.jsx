@@ -21,12 +21,6 @@ const Header = () => {
         <Link to="/practice-area" className="option">
           practice area
         </Link>
-        <Link to="/esg" className="option">
-          ESG
-        </Link>
-        <Link to="/team" className="option">
-          team
-        </Link>
         <Link to="/esg/all-resources" className="option">
           resources
         </Link>
@@ -56,16 +50,6 @@ const Header = () => {
             <li className="item">
               <a href="/practice-area" className="link">
                 practice area
-              </a>
-            </li>
-            <li className="item">
-              <a href="/esg" className="link">
-                ESG
-              </a>
-            </li>
-            <li className="item">
-              <a href="/team" className="link">
-                team
               </a>
             </li>
             <li className="item">

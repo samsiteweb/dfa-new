@@ -1,49 +1,54 @@
 .checkinContainer {
-  background-color: #f7f8f9;
-  padding: 61px 100px 61px 156px;
+  padding: 0 100px;
+}
+.checkinContainerInner {
+  background: #331440;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 41.41px;
+  gap: 20px;
+  padding: 10px 40px;
+  margin-top: -50px;
+  z-index: 999;
 }
 .checkinCard {
   background-color: transparent;
   display: flex;
   align-items: center;
-  /* gap: 0;
-  padding: 0;
-  width: 100%; */
+  color: #fff !important;
 }
 .checkiniconsDiv {
-  background-color: #dcbaea;
   padding: 12px;
   width: fit-content;
   height: fit-content;
 }
 .checkinImg {
-  width: 38px;
-  height: auto;
+  display: flex;
+  width: 35.735px;
+  height: 35.735px;
+  padding: 12.029px;
+  justify-content: center;
+  align-items: center;
+  border: 1.489px solid #f7f8f9;
 }
 .detailsDiv {
   height: 100%;
-  background-color: #fff;
   padding: 5px 70px 5px 12px;
 }
 .subHeading {
-  color: #333333;
   font-family: poppins !important;
-  font-size: 14.138px;
+  font-size: 10.526px;
   font-style: normal;
   font-weight: 300;
   text-transform: capitalize;
   margin: 2px 0 0 0;
   padding: 0;
   text-align: left;
-} 
+  color: #C58CDB;
+}
 .smallHeading {
   text-align: left;
-  color: #310c4b;
   font-family: playfair;
-  font-size: 30px;
+  font-size: 24.059px;
   font-style: normal;
   font-weight: 700;
   text-transform: capitalize;
@@ -53,38 +58,40 @@
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .checkinContainer {
-    padding: 61px 100px 61px 156px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 41.41px;
+    padding: 0 40px;
+  }
+  .checkinContainerInner {
+    grid-template-columns: 0.5fr 1.5fr 1.5fr;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
-.checkinContainer {
-    padding: 61px 10px 61px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .checkinContainer {
+    padding: 0 40px;
+  }
+  .checkinContainerInner {
+    display: block;
+    margin-top: -100px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .checkinContainer {
-    padding: 61px 20px;
-    display: block;
+    padding: 0 20px;
   }
-  .checkinCard {
-    margin-top: 30px;
+  .checkinContainerInner {
+    display: block;
+    padding: 10px 5px;
+    margin-top: -80px;
   }
 }
 @media only screen and (max-width: 300px) and (min-width: 120px) {
   .checkinContainer {
-    padding: 61px 0;
-    display: block;
-    overflow: hidden;
+    padding: 0;
   }
-  .checkinCard {
-    margin-top: 30px;
+  .checkinContainerInner {
+    display: block;
+    padding: 10px 5px;
+    overflow-x: hidden;
   }
 }
