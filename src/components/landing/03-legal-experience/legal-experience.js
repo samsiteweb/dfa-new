@@ -1,6 +1,10 @@
 import React from "react";
 import "./legal-experience.css";
+
 import Button from "../../button/button";
+
+import PurpleLine from "../../../assets/img/purple-line.jpg";
+import PurpleLineLight from "../../../assets/img/purple-line-light.jpg";
 
 function LegalExperience() {
   return (
@@ -22,8 +26,18 @@ function LegalExperience() {
           problem-solving, solidifying our dedication to upholding the highest
           standards of legal excellence."
         </p>
-        <div className="legalDetailsDivInner">
-            <Button>learn more...</Button>
+        <div className="featureDetailsDivInner">
+          <Button>learn more</Button>
+          <div className="lineDiv">
+            <img src={PurpleLine} alt="" className="lineImg" />
+            <img src={PurpleLineLight} alt="" className="lineImgLight" />
+            <img src={PurpleLine} alt="" className="lineImg" />
+            <img src={PurpleLineLight} alt="" className="lineImgLight" />
+            <img src={PurpleLine} alt="" className="lineImg" />
+            <img src={PurpleLineLight} alt="" className="lineImgLight" />
+            <img src={PurpleLine} alt="" className="lineImg" />
+            <img src={PurpleLineLight} alt="" className="lineImgLight" />
+          </div>
         </div>
       </div>
     </div>

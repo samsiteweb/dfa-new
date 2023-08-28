@@ -37,19 +37,24 @@
   justify-content: center;
   align-items: center;
   background: #fff;
+  transition: background-color 1s ease-in-out;
 }
 .pricingCard:hover {
   background: #9338b6;
 }
-.pricingCard:hover .pricingImg,
+.pricingCard:hover .pricingImg {
+  fill: white;
+}
 .pricingCard:hover .pricingP,
 .pricingCard:hover .pricingH2,
-.pricingCard:hover .pricingPar {
-  color: #fff !important;
+.pricingCard:hover .pricingPar
+{
+  color: #fff;
 }
 .pricingImg {
   width: 57.113px;
   height: 57.113px;
+  transition: fill 0.3s ease-in-out;
 }
 .pricingP {
   color: #000;

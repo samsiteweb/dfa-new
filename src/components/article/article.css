@@ -81,9 +81,13 @@
   font-weight: 400;
   text-decoration: none;
 }
+.articleLinkDiv:hover .articleImg2 {
+  transform: translateX(5px); /* Move the icon 5 pixels to the right on hover */
+}
 .articleImg2 {
   width: 12px;
   height: 12px;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
