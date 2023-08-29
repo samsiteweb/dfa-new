@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  margin-top: 65px;
+  margin-top: 35px;
 }
 .helpCard {
   display: flex;
@@ -71,9 +71,12 @@
   }
   .gridedGap {
     display: block;
-    margin-top: 5px;
+    margin: 0;
   }
   .helpCard {
-    margin-top: 20px;
+    margin: 0;
+  }
+  .helpCard2, .helpCard3, .helpCard4 {
+    margin: 0;
   }
 }

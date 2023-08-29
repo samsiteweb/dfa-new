@@ -11,18 +11,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(
+  background: linear-gradient(
       114deg,
       rgba(57, 0, 98, 0.7) 0%,
       rgba(58, 4, 52, 0.58) 35.42%,
       rgba(190, 15, 57, 0) 100%
-    ),
-    no-repeat; */
-    background: linear-gradient(
-      114deg,
-      rgba(57, 0, 98, 0.89) 0%,
-      rgba(58, 4, 52, 0.945) 35.42%,
-      rgba(190, 15, 56, 0.555) 100%
     ),
     no-repeat;
   display: flex;
@@ -35,7 +28,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  
+
   opacity: 0;
   position: absolute;
   top: 0;
@@ -53,7 +46,7 @@
   text-align: center;
   color: white;
   position: absolute;
-  top: 50%;
+  margin-top: 300px;
   transform: translateY(-50%);
 }
 .carousel-details-Par {
@@ -66,13 +59,13 @@
   text-transform: capitalize;
 }
 .carousel-details-H2 {
-  width: 760.892px;
+  width: 1100px;
   color: #f2f2f2;
   font-family: playfair;
   font-size: 70.945px;
   font-weight: 800;
   text-transform: capitalize;
-  margin: 33px 0;
+  margin: 10px 0 33px 0;
   text-align: center;
 }
 .BannerbtnDiv {
@@ -98,18 +91,24 @@
   cursor: pointer;
 }
 .carousel-dot.active {
-  background-color: #9B51E0;
+  background-color: #9b51e0;
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .image-carousel {
     height: 60vh;
   }
+  .carousel-details {
+    margin-top: -100px;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .image-carousel {
     height: 70vh;
+  }
+  .carousel-details {
+    margin-top: -100px;
   }
   .carousel-details-Par {
     font-size: 18px;
@@ -126,13 +125,15 @@
   }
   .carousel-details {
     padding: 0 20px;
+    margin-top: 200px;
   }
   .carousel-details-Par {
     transform: translateY(-50%);
+    font-size: 20px;
   }
   .carousel-details-H2 {
     width: 100%;
-    font-size: 42px;
+    font-size: 40px;
     margin: 0 0 15px 0;
   }
 }

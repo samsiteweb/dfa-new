@@ -36,7 +36,7 @@
 }
 .subHeading {
   font-family: poppins !important;
-  font-size: 10.526px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   text-transform: capitalize;
@@ -77,12 +77,12 @@
 
 @media screen and (max-width: 600px) {
   .checkinContainer {
-    padding: 0 20px;
+    padding: 0;
   }
   .checkinContainerInner {
     display: block;
     padding: 10px 5px;
-    margin-top: -80px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 300px) and (min-width: 120px) {
@@ -93,5 +93,6 @@
     display: block;
     padding: 10px 5px;
     overflow-x: hidden;
+    margin: 0;
   }
 }

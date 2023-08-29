@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
 }
+.ContactFormP {
+  color: #828282;
+  text-align: center;
+}
 .contactFormH4 {
   color: #9b51e0;
   font-family: poppins;
@@ -30,17 +34,17 @@
 .inputDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 20px;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 .inputTag {
   width: 100%;
-  height: 44px;
+  height: 50px;
   box-sizing: border-box;
   padding: 10px;
-  margin: -40px 0 0 0;
+  margin: 0 0 0 0;
   border: 1.594px solid #dcbaea;
   outline: none;
 }
@@ -87,13 +91,22 @@
   .ContactFormDivOutter {
     padding: 116px 20px;
   } 
+  .contactFormH4 {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
   .inputDiv {
     gap: 20px;
+    display: block;
   }
   .ContactFormInner {
     margin-top: 0;
   }
   .inputTag {
     margin-top: 10px;
+  }
+  .messageInput {
+    margin-top: 12px;
   }
 }

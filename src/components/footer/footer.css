@@ -56,11 +56,11 @@
   margin-top: 115px;
 }
 .footerLogo {
-  /* width: 100%;
-  height: auto; */
-
   width: 244.942px;
-  height: 97.295px;
+  height: auto;
+
+  /* width: 244.942px;
+  height: 97.295px; */
 }
 .logoDetails {
   color: #f3e8f8;
@@ -70,6 +70,12 @@
   font-weight: 400;
   margin-top: 39.38px;
   text-align: left;
+}
+.socialsDiv {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 .productH2 {
   color: #c58cdb;
@@ -110,8 +116,6 @@
   font-size: 17px;
   font-weight: 600;
 }
-
-
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .footerContainer {

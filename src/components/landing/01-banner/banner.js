@@ -7,23 +7,23 @@ const Banner = () => {
 
   const slides = [
     {
-      image: require("../../../assets/img/bg.jpg"),
-      header: "Your Trusted Pillar For Life And Business.",
+      image: require("../../../assets/img/carousel-item-1.png"),
+      header: "Your Trusted Pillar For Life And Business",
       details: "DFA Solicitors, We are",
     },
     {
-      image: require("../../../assets/img/1.jpg"),
-      header: "We fight for your justice as like a friend.",
-      details: "The Most Talented Law Firm",
+      image: require("../../../assets/img/carousel-item-2.png"),
+      header: "first choice for innovative legal & governance solutions",
+      details: "DFA Solicitors, We are",
     },
     {
-      image: require("../../../assets/img/2.jpg"),
-      header: "We fight for your justice as like a friend.",
-      details: "The Most Required Assets",
+      image: require("../../../assets/img/carousel-item-3.png"),
+      header: "sustainable world class practice and an exceptional talent pool",
+      details: "DFA Solicitors, We are",
     },
     {
-      image: require("../../../assets/img/3.jpg"),
-      header: "Your Trusted Pillar For Life And Business.",
+      image: require("../../../assets/img/carousel-item-4.png"),
+      header: "The DFA DNA - Deft, Formidable & Astute",
       details: "DFA Solicitors, We are",
     },
   ];
@@ -52,6 +52,7 @@ const Banner = () => {
           className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
           style={{
             backgroundImage: `url(${slide.image})`,
+            height: "100vh",
           }}
         >
           <div className="overlay">

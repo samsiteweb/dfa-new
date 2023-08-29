@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="ContactFormDivOutter">
       <div className="ContactFormDiv">
-        <p style={{ color: "#828282" }}>
+        <p className="ContactFormP">
           Any Legal Problem ? We are ready to fight for our clients!!
         </p>
         <h1 style={{ color: "#310C4B" }}>Speed & Quick consulting</h1>
