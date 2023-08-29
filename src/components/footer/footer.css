@@ -1,7 +1,11 @@
 .footerContainer {
   background: #310c4b;
-  padding: 180px 150px 40px 140px;
+  padding: 180px 120px 40px 140px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footerTop {
   display: grid;
@@ -18,15 +22,18 @@
   letter-spacing: 0.2px;
 }
 .newsletter {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
   align-items: center;
   margin-top: 60px;
 }
 .footerInput {
+  width: 100%;
   outline: none;
   background: #fff;
   border: none;
+  border-radius: 8px;
   padding: 15px 10px;
 }
 .footerInput::placeholder {
@@ -36,6 +43,22 @@
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
+}
+.newsletterBtn {
+  width: fit-content;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #C62C89;
+  cursor: pointer;
+  color: #fff;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px;
 }
 .footerP {
   color: #f7f8f9;
@@ -51,16 +74,13 @@
 }
 .footerMiddle {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
   gap: 70px;
   margin-top: 115px;
 }
 .footerLogo {
   width: 244.942px;
   height: auto;
-
-  /* width: 244.942px;
-  height: 97.295px; */
 }
 .logoDetails {
   color: #f3e8f8;
@@ -71,27 +91,20 @@
   margin-top: 39.38px;
   text-align: left;
 }
-.socialsDiv {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.productH2 {
+.productH2, .productH3 {
   color: #c58cdb;
   font-family: playfair;
   font-size: 37.065px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.productH3 {
+/* .productH3 {
   color: #c58cdb;
   font-family: playfair;
   font-size: 37.065px;
   font-weight: 700;
   text-transform: capitalize;
-  width: 250px;
-}
+} */
 .productLink {
   display: block;
   color: #f7f8f9;
@@ -104,8 +117,8 @@
   text-decoration: none;
 }
 .footerHR {
+  width: 100%;
   margin-top: 124.11px;
-  width: 1000px;
   border: 1px solid rgba(220, 186, 234, 0.35);
 }
 .footerBottom {

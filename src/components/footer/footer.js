@@ -6,12 +6,6 @@ import Button from "../button/button";
 import card from "../../assets/img/footer-card.png";
 import logo from "../../assets/icons/logo.svg";
 
-import Twitter from "../../assets/icons/socials/twitter.svg";
-import Linkedin from "../../assets/icons/socials/linkedin.svg";
-import Instagram from "../../assets/icons/socials/instagram.svg";
-import Google from "../../assets/icons/socials/google.svg";
-import Youtube from "../../assets/icons/socials/youtube.svg";
-
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -26,7 +20,7 @@ const Footer = () => {
               placeholder="your email"
               className="footerInput"
             />
-            <Button>get started</Button>
+            <button className="newsletterBtn">get started </button>
           </div>
           <p className="footerP">
             Get a response tomorrow if you submit by 9pm today. If we received
@@ -41,17 +35,6 @@ const Footer = () => {
       <div className="footerMiddle">
         <div>
           <img src={logo} alt="" className="footerLogo" />
-          <p className="logoDetails">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature
-          </p>
-          <div className="socialsDiv">
-            <img src={Twitter} className="social-img" alt="" />
-            <img src={Linkedin} className="social-img" alt="" />
-            <img src={Instagram} className="social-img" alt="" />
-            <img src={Google} className="social-img" alt="" />
-            <img src={Youtube} className="social-img" alt="" />
-          </div>
         </div>
         <div>
           <h2 className="productH2">product</h2>
