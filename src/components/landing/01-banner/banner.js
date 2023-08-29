@@ -52,7 +52,6 @@ const Banner = () => {
           className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
           style={{
             backgroundImage: `url(${slide.image})`,
-            height: "100vh",
           }}
         >
           <div className="overlay">
