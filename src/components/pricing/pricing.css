@@ -1,19 +1,19 @@
 .practicePricingDiv {
-  background: url("../../assets/img/bg.jpg");
+  background: url("../../assets/img/carousel-item-4.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .practicePricingOverlay {
-  /* background: linear-gradient(
+  background: linear-gradient(
     0deg,
     rgba(32, 0, 54, 0.94) 0%,
     rgba(32, 0, 54, 0.808) 100%
-  ); */
-  background: linear-gradient(
+  );
+  /* background: linear-gradient(
     0deg,
     rgba(32, 0, 54, 0.952) 0%,
     rgba(32, 0, 54, 0.89) 100%
-  );
+  ); */
   padding: 134px 156px;
   display: flex;
   flex-direction: column;
@@ -57,12 +57,6 @@
   transition: fill 0.3s ease-in-out;
 }
 .pricingP {
-  color: #000;
-  text-align: center;
-  font-family: poppins;
-  font-size: 14.118px;
-  font-weight: 400;
-  text-transform: capitalize;
   margin-top: 18px;
 }
 .pricingH2 {
@@ -73,13 +67,8 @@
   text-transform: capitalize;
 }
 .pricingPar {
-  color: #000;
-  text-align: center;
-  font-family: poppins;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: capitalize;
   margin-top: 15px;
+  text-align: center;
 }
 .pricingBtnDiv {
   margin-top: 18px;

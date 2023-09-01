@@ -6,7 +6,7 @@ import PracticeImg from "../../../assets/img/practice-area.jpg";
 const PracticeBanner = () => {
   return (
     <div>
-      <img src={PracticeImg} alt='' className='bannerImg' />
+      <img src={PracticeImg} alt='' className='PracticebannerImg' />
     </div>
   )
 }

@@ -5,8 +5,8 @@ import BannerImg from "../../../assets/img/about-banner-img.jpg";
 
 const AboutBanner = () => {
   return (
-    <div>
-      <img src={BannerImg} alt='' className='bannerImg' />
+    <div className='AboutBannerDiv'>
+      <img src={BannerImg} alt='' className='AboutbannerImg' />
     </div>
   )
 }

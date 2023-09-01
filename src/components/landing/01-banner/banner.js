@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./banner.css";
-import Button from "../../button/button";
+
+// import Button from "../../button/button";
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,11 +58,13 @@ const Banner = () => {
         >
           <div className="overlay">
             <div className="carousel-details">
-              <p className="carousel-details-Par">{slide.details}</p>
+              <h4 className="carousel-details-Par">{slide.details}</h4>
               <h2 className="carousel-details-H2">{slide.header}</h2>
-              <div className="BannerbtnDiv">
-                <Button>contact us now</Button>
-              </div>
+              {/* <div className="BannerbtnDiv">
+                <Button>
+                  <Link to="/contact">contact us now</Link>
+                </Button>
+              </div> */}
             </div>
           </div>
         </div>

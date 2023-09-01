@@ -1,5 +1,5 @@
 .featureDiv {
-  padding: 116px 156px;
+  padding: 116px 286px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,37 +8,20 @@
 .featureDetailsDiv {
   margin-top: 48px;
 }
-/* .featuring {} */
 .lawyerImg {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-top: 40px;
 }
 .featureName {
-  color: #310c4b;
-  font-family: playfair;
-  font-size: 36px;
-  font-weight: 600;
-  text-transform: capitalize;
   margin-top: 60px;
 }
 .featurePosition {
-  color: #4f4f4f;
-  text-align: justify;
-  font-family: poppins;
-  font-size: 24px;
-  font-weight: 300;
-  text-transform: capitalize;
   margin-top: 10px;
 }
 .featureDetailsPar {
-  color: #000;
-  text-align: justify;
-  font-family: poppins;
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: capitalize;
   margin-top: 50px;
+  line-height: 33px;
 }
 .featureDetailsDivInner {
   margin-top: 38px;
@@ -46,7 +29,7 @@
   gap: 41px;
   align-items: center;
 }
-.lineDiv {
+/* .lineDiv {
   display: flex;
   gap: 18px;
 }
@@ -57,7 +40,7 @@
 .lineImgLight {
   width: 100%;
   height: 8px;
-}
+} */
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .lineDiv {

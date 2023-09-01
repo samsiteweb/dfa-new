@@ -1,0 +1,113 @@
+.navContainer {
+  padding: 10px 80px;
+}
+.navContainerInner {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 16px;
+  padding: 0 40px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.options {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+.option {
+  text-decoration: none;
+  color: #000;
+  font-family: quicksand;
+  font-size: 18px;
+  /* text-transform: capitalize; */
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("../../assets/icons/menu.svg");
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.navbar-inverse .navbar-toggler-icon {
+  background-image: url("../../assets/icons/menu.svg");
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../../assets/icons/menu.svg");
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .navContainer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .navTop2 {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .navTopRight {
+    margin: 0;
+    display: block;
+  }
+  .navFlex {
+    margin-top: 20px;
+  }
+  .btnNavTop {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navContainer {
+    padding: 0 10px;
+    border: none;
+  }
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  .navTop2 {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .navTopRight {
+    margin: 0;
+    display: block;
+  }
+  .navFlex {
+    margin-top: 20px;
+  }
+  .btnNavTop {
+    margin-top: 20px;
+  }
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
-import Button from "../button/button";
+
+import Slide from "react-reveal/Slide";
 
 import card from "../../assets/img/footer-card.png";
 import logo from "../../assets/icons/logo.svg";
@@ -10,26 +11,31 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerTop">
-        <div>
-          <h2 className="footerH2">
-            Get our stories delivered From us to your inbox weekly.
-          </h2>
-          <div className="newsletter">
-            <input
-              type="email"
-              placeholder="your email"
-              className="footerInput"
-            />
-            <button className="newsletterBtn">get started </button>
+        <Slide left>
+          <div>
+            <h2 className="footerH2">
+              Get our stories delivered From us to your inbox weekly.
+            </h2>
+            <div className="newsletter">
+              <input
+                type="email"
+                placeholder="your email"
+                className="footerInput"
+              />
+              <button className="newsletterBtn">get started </button>
+            </div>
+            <p className="footerP">
+              Get a response tomorrow if you submit by 9pm today. If we received
+              after 9pm will get a reponse the following day.
+            </p>
           </div>
-          <p className="footerP">
-            Get a response tomorrow if you submit by 9pm today. If we received
-            after 9pm will get a reponse the following day.
-          </p>
-        </div>
-        <div>
-          <img src={card} alt="" className="footerTopRight" />
-        </div>
+        </Slide>
+
+        <Slide right>
+          <div>
+            <img src={card} alt="" className="footerTopRight" />
+          </div>
+        </Slide>
       </div>
 
       <div className="footerMiddle">

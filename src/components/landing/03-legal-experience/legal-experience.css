@@ -1,5 +1,5 @@
 .legalDiv {
-  padding: 116px 156px;
+  padding: 116px 286px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,12 +9,6 @@
   margin-top: 48px;
 }
 .legalDetailsPar {
-  color: #000;
-  text-align: justify;
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: capitalize;
   line-height: 188%;
 }
 .legalDetailsDivInner {

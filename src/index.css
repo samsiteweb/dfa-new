@@ -10,29 +10,48 @@
     url(./assets/font/Poppins/Poppins-Light.ttf) format("truetype");
 }
 @font-face {
-  font-family: "poppinsMedium";
-  src: local("poppinsMedium"),
-    url(./assets/font/Poppins/Poppins-Medium.ttf) format("truetype");
+  font-family: "quicksand";
+  src: local("quicksand"),
+    url(./assets/font/Quicksand-Regular.ttf) format("truetype");
 }
 * {
   padding: 0;
   margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 h1 {
   color: #310c4b;
   text-align: center;
   font-family: playfair;
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
   text-transform: capitalize;
-  line-height: 137.5%;
+  line-height: normal;
+}
+h2 {
+  color: #310c4b;
+  font-family: playfair;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+h4 {
+  color: #333;
+  font-family: quicksand;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 p {
-  color: #333;
-  font-family: poppins;
-  font-size: 16px;
+  font-family: quicksand;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  text-transform: capitalize;
+  font-weight: 400;
+  /* text-transform: capitalize; */
+  line-height: normal;
+  text-align: justify;
 }

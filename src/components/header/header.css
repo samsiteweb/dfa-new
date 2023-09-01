@@ -1,8 +1,8 @@
 .headerDiv {
   display: flex;
   align-items: center;
-  padding: 10px 156px;
   background: #331440;
+  padding: 10px 160px;
 }
 .logoImg {
   width: 132px;
@@ -16,7 +16,7 @@
 }
 .option {
   color: #f7f8f9 !important;
-  font-family: poppins;
+  font-family: quicksand;
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
@@ -28,7 +28,6 @@
 .mobileNav {
   display: none;
 }
-
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .headerDiv {
@@ -104,7 +103,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    background: #331440; 
+    background: #331440;
     width: fit-content;
     padding: 10px 20px;
     /* border-radius: 50px; */
@@ -173,11 +172,14 @@
   .checkbox:checked + .button .icon::after {
     top: 0;
     transform: rotate(-135deg);
-  } 
+  }
 }
 
 @media only screen and (max-width: 300px) and (min-width: 120px) {
-  .headerDiv, .mobileNav, .nav, .list {
+  .headerDiv,
+  .mobileNav,
+  .nav,
+  .list {
     overflow-x: hidden;
   }
   .list {

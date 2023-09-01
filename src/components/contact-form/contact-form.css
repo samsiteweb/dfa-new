@@ -12,11 +12,6 @@
   text-align: center;
 }
 .contactFormH4 {
-  color: #9b51e0;
-  font-family: poppins;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: capitalize;
   margin-top: 20px;
 }
 .ContactFormInner {
@@ -50,7 +45,7 @@
 }
 .inputTag::placeholder, .messageInput::placeholder {
   color: #333;
-  font-family: poppins;
+  font-family: quicksand;
   font-size: 14.118px;
   font-style: normal;
   font-weight: 600;
@@ -65,7 +60,7 @@
   margin-top: 28.24px;
   outline: none;
   color: #333;
-  font-family: Poppins;
+  font-family: quicksand;
   font-size: 14.118px;
   font-style: normal;
   font-weight: 600;

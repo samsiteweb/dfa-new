@@ -3,9 +3,8 @@
 }
 .PracticeCon1H2 {
   color: #310c4b;
-  font-family: Playfair Display;
+  font-family: playfair;
   font-size: 48px;
-  font-weight: 600;
   text-transform: capitalize;
   margin-top: 60px;
 }
@@ -16,7 +15,7 @@
 }
 .PracticeCon1Par {
   margin: 75px 0 40px 0;
-  text-align: left;
+  text-align: justify;
 }
 .coloredCardDiv {
   margin-top: 87px;
@@ -32,9 +31,8 @@
   border-radius: 6.829px;
   background: #e486be;
   width: fit-content;
-  list-style-type: none;
   color: #333;
-  font-family: poppins;
+  font-family: quicksand;
   font-size: 20.486px;
   font-weight: 400;
   letter-spacing: 0.171px;
@@ -46,7 +44,7 @@
   width: fit-content;
   list-style-type: none;
   color: #333;
-  font-family: poppins;
+  font-family: quicksand;
   font-size: 20.486px;
   font-weight: 400;
   letter-spacing: 0.171px;
