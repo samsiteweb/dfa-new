@@ -39,29 +39,29 @@ const Header = () => {
           <nav className="nav">
             <ul className="list">
               <li className="item">
-                <a href="/" className="link">
+                <Link to="/" className="link">
                   home
-                </a>
+                </Link>
               </li>
               <li className="item">
-                <a href="/about" className="link">
+                <Link to="/about" className="link">
                   about
-                </a>
+                </Link>
               </li>
               <li className="item">
-                <a href="/practice-area" className="link">
+                <Link to="/practice-area" className="link">
                   practice area
-                </a>
+                </Link>
               </li>
               <li className="item">
-                <a href="/contact" className="link">
+                <Link to="/contact" className="link">
                   contacts
-                </a>
+                </Link>
               </li>
               <li className="item">
-                <a href="/esg/all-resources" className="link">
+                <Link to="/esg/all-resources" className="link">
                   resources
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

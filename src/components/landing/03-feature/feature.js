@@ -6,6 +6,7 @@ import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
 
 import Lawyer from "../../../assets/img/abidemi.jpg";
+import { Link } from "react-router-dom";
 
 function FeaturedAttorney() {
   return (
@@ -38,7 +39,7 @@ function FeaturedAttorney() {
             instrumental in building
           </p>
           <div className="featureDetailsDivInner">
-          <a href="/about"> <Button>learn more</Button> </a>
+          <Link to="/about"> <Button>learn more</Button> </Link>
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />
             <img src={PurpleLineLight} alt="" className="lineImgLight" />

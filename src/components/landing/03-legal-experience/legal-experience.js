@@ -3,6 +3,7 @@ import "./legal-experience.css";
 import Slide from "react-reveal/Slide";
 
 import Button from "../../button/button";
+import { Link } from "react-router-dom";
 
 function LegalExperience() {
   return (
@@ -26,7 +27,7 @@ function LegalExperience() {
             dedication to upholding the highest standards of legal excellence."
           </p>
           <div className="featureDetailsDivInner" >
-            <a href="/about"><Button>learn more</Button>  </a>
+            <Link to="/about"><Button>learn more</Button>  </Link>
             
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />

@@ -5,6 +5,7 @@ import Slide from "react-reveal/Slide";
 
 import Image from "../../../assets/img/Picture Frame.jpg";
 import Button from "../../button/button";
+import { Link } from "react-router-dom";
 
 const Need = () => {
   return (
@@ -27,7 +28,7 @@ const Need = () => {
             sustainable life and business transactions.
           </p>
           <div className="buttonDivNeed">
-          <a href="/about"> <Button>more about us</Button>  </a>
+          <Link to="/about"> <Button>more about us</Button>  </Link>
             
           </div>
         </div>
