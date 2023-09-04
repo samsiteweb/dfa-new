@@ -16,10 +16,10 @@ const Checkin = () => {
           </div>
           <div>
             <div className="detailsDiv">
-              <Link to="/">
+            <a href="https://paystack.com/buy/dfa-expert-advice-fwgpnu">
                 <h4 className="subHeading">book your</h4>
                 <h2 className="smallHeading">appointment</h2>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -30,10 +30,10 @@ const Checkin = () => {
           </div>
           <div>
             <div className="detailsDiv">
-              <Link to="/">
+            <a href="https://paystack.com/buy/dfa-expert-advice-fwgpnu">
                 <h4 className="subHeading">get free</h4>
                 <h2 className="smallHeading">expert advice</h2>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
