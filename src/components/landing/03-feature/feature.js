@@ -38,7 +38,7 @@ function FeaturedAttorney() {
             instrumental in building
           </p>
           <div className="featureDetailsDivInner">
-            <Button>learn more</Button>
+          <a href="/about"> <Button>learn more</Button> </a>
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />
             <img src={PurpleLineLight} alt="" className="lineImgLight" />
