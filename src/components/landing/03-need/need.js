@@ -27,7 +27,8 @@ const Need = () => {
             sustainable life and business transactions.
           </p>
           <div className="buttonDivNeed">
-            <Button>more about us</Button>
+          <a href="/about"> <Button>more about us</Button>  </a>
+            
           </div>
         </div>
       </Slide>

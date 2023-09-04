@@ -25,8 +25,9 @@ function LegalExperience() {
             client-centered approach to problem-solving, solidifying our
             dedication to upholding the highest standards of legal excellence."
           </p>
-          <div className="featureDetailsDivInner">
-            <Button>learn more</Button>
+          <div className="featureDetailsDivInner" >
+            <a href="/about"><Button>learn more</Button>  </a>
+            
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />
             <img src={PurpleLineLight} alt="" className="lineImgLight" />
