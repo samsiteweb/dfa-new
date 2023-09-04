@@ -20,13 +20,13 @@ const Header = () => {
             about
           </Link>
           <Link to="/practice-area" className="option">
-            practice area
+            practice areas
+          </Link>
+          <Link to="/contact" className="option">
+            contact
           </Link>
           <Link to="/esg/all-resources" className="option">
             resources
-          </Link>
-          <Link to="/contact" className="option">
-            contacts
           </Link>
         </div>
 
@@ -54,13 +54,13 @@ const Header = () => {
                 </a>
               </li>
               <li className="item">
-                <a href="/esg/all-resources" className="link">
-                  resources
+                <a href="/contact" className="link">
+                  contacts
                 </a>
               </li>
               <li className="item">
-                <a href="/contact" className="link">
-                  contacts
+                <a href="/esg/all-resources" className="link">
+                  resources
                 </a>
               </li>
             </ul>

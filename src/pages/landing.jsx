@@ -19,9 +19,9 @@ const Landing = () => {
       <Help />
       <Need />
       <FeaturedAttorney />
-      <Pricing />
+      {/* <Pricing /> */}
       <ContactForm />
-      <Article />
+      {/* <Article /> */}
     </div>
   );
 };

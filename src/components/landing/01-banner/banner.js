@@ -13,16 +13,16 @@ const Banner = () => {
       header: "Your Trusted Pillar For Life And Business",
       details: "DFA Solicitors, We are",
     },
-    {
-      image: require("../../../assets/img/carousel-item-2.png"),
-      header: "first choice for innovative legal & governance solutions",
-      details: "DFA Solicitors, We are",
-    },
-    {
-      image: require("../../../assets/img/carousel-item-3.png"),
-      header: "sustainable world class practice and an exceptional talent pool",
-      details: "DFA Solicitors, We are",
-    },
+    // {
+    //   image: require("../../../assets/img/carousel-item-2.png"),
+    //   header: "first choice for innovative legal & governance solutions",
+    //   details: "DFA Solicitors, We are",
+    // },
+    // {
+    //   image: require("../../../assets/img/carousel-item-3.png"),
+    //   header: "sustainable world class practice and an exceptional talent pool",
+    //   details: "DFA Solicitors, We are",
+    // },
     {
       image: require("../../../assets/img/carousel-item-4.png"),
       header: "The DFA DNA - Deft, Formidable & Astute",
@@ -33,7 +33,7 @@ const Banner = () => {
   let autoplayInterval;
 
   useEffect(() => {
-    autoplayInterval = setInterval(nextSlide, 3000);
+    autoplayInterval = setInterval(nextSlide, 8000);
     return () => clearInterval(autoplayInterval);
   }, [currentSlide]);
 

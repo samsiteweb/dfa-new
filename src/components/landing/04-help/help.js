@@ -21,7 +21,7 @@ const Help = () => {
     <div className="helpContainer">
       <Flip right>
         <p style={{ color: "#828282" }}>Area of practice</p>
-        <h1 style={{ color: "#310C4B" }}>How can we Help You</h1>
+        <h1 style={{ color: "#310C4B" }}>How can we Help You ?</h1>
         <hr className="HR" />
       </Flip>
 
