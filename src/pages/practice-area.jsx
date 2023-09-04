@@ -1,9 +1,9 @@
 import React from 'react';
 import PracticeBanner from '../components/practice-area/practice-banner/practice-area';
 import PracticeCon1 from '../components/practice-area/practice-con1/practice-con1';
-import Pricing from '../components/pricing/pricing';
+// import Pricing from '../components/pricing/pricing';
 import ContactForm from '../components/contact-form/contact-form';
-import Article from '../components/article/article';
+// import Article from '../components/article/article';
 
 
 const PracticeArea = () => {
@@ -11,9 +11,9 @@ const PracticeArea = () => {
     <div>
       <PracticeBanner />
       <PracticeCon1 />
-      <Pricing />
+      {/* <Pricing /> */}
       <ContactForm />
-      <Article />
+      {/* <Article /> */}
     </div>
   )
 }

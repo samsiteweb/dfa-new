@@ -47,20 +47,17 @@ const Footer = () => {
           <Link to="/" className="productLink">
             Home
           </Link>
-          <Link to="/" className="productLink">
+          <Link to="/about" className="productLink">
             about
           </Link>
-          <Link to="/" className="productLink">
+          <Link to="/practice-area" className="productLink">
             practice area
           </Link>
-          <Link to="/" className="productLink">
-            attorneys
-          </Link>
-          <Link to="/" className="productLink">
-            blog
-          </Link>
-          <Link to="/" className="productLink">
+          <Link to="/contact" className="productLink">
             contact
+          </Link>
+          <Link to="/esg/all-resources" className="productLink">
+                  resources
           </Link>
         </div>
         <div>

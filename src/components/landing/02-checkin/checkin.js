@@ -31,7 +31,7 @@ const Checkin = () => {
           <div>
             <div className="detailsDiv">
             <a href="https://paystack.com/buy/dfa-expert-advice-fwgpnu">
-                <h4 className="subHeading">get free</h4>
+                <h4 className="subHeading">get</h4>
                 <h2 className="smallHeading">expert advice</h2>
               </a>
             </div>
