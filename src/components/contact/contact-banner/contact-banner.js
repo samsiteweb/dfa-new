@@ -1,7 +1,7 @@
 import React from 'react';
 import "./contact-banner.css";
 
-import BannerImg from "../../../assets/img/contact-banner-img.jpg";
+import BannerImg from "../../../assets/img/contact-banner.png";
 
 const ContactBanner = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./practice-area.css";
 
-import PracticeImg from "../../../assets/img/practice-area.jpg";
+import PracticeImg from "../../../assets/img/practice_area.png";
 
 const PracticeBanner = () => {
   return (
