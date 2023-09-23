@@ -26,7 +26,7 @@ const AboutFounder = () => {
         <Slide right>
           <div className="aboutFounderDetailsDiv">
             <h4 className="founderName">Mrs. Abidemi Ademola</h4>
-            <p className="founderPosition">Senior Partner</p>
+            <p className="founderPosition">Managing Partner</p>
             <p className="founderIntro">
               A highly skilled and well experienced Corporate Counsel,
               Governance Professional and Executive Business Leader with over 27

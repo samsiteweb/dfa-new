@@ -3,9 +3,8 @@
 }
 .checkinContainerInner {
   background: #331440;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
   padding: 10px 40px;
   margin-top: -180px;
   z-index: 999;

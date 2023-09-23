@@ -14,7 +14,7 @@ const Footer = () => {
         <Slide left>
           <div>
             <h2 className="footerH2">
-              Get our stories delivered From us to your inbox weekly.
+              Get our newsletter delivered to your inbox.
             </h2>
             <div className="newsletter">
               <input
@@ -24,10 +24,6 @@ const Footer = () => {
               />
               <button className="newsletterBtn">get started </button>
             </div>
-            <p className="footerP">
-              Get a response tomorrow if you submit by 9pm today. If we received
-              after 9pm will get a reponse the following day.
-            </p>
           </div>
         </Slide>
 
@@ -80,10 +76,7 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="productH2">contact us</h2>
-          <p className="productLink">
-            Address: 6b Chief Collins Uchiduno street, Lekki Phase 1 Lagos
-          </p>
-          <p className="productLink">Phone No: +234 8034023891</p>
+          <p className="productLink">Phone No: (+234) 818 696 3053</p>
           <p className="productLink">
             Email Address: DFASolicitors@outlook.com
           </p>

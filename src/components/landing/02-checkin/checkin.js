@@ -24,7 +24,7 @@ const Checkin = () => {
           </div>
         </div>
 
-        <div className="checkinCard">
+        {/* <div className="checkinCard">
           <div className="checkiniconsDiv">
             <img src={award} alt="" className="checkinImg" />
           </div>
@@ -36,7 +36,7 @@ const Checkin = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="checkinCard">
           <div className="checkiniconsDiv">

@@ -9,24 +9,24 @@ const Banner = () => {
 
   const slides = [
     {
+      image: require("../../../assets/img/carousel-item-2.png"),
+      header: "Law, Corporate Governance & Corporate Services",
+      details: "DFA Solicitors",
+    },
+    {
       image: require("../../../assets/img/carousel-item-1.png"),
       header: "Your Trusted Pillar For Life And Business",
-      details: "DFA Solicitors, We are",
+      details: "DFA Solicitors",
     },
-    // {
-    //   image: require("../../../assets/img/carousel-item-2.png"),
-    //   header: "first choice for innovative legal & governance solutions",
-    //   details: "DFA Solicitors, We are",
-    // },
-    // {
-    //   image: require("../../../assets/img/carousel-item-3.png"),
-    //   header: "sustainable world class practice and an exceptional talent pool",
-    //   details: "DFA Solicitors, We are",
-    // },
+    {
+      image: require("../../../assets/img/carousel-item-3.png"),
+      header: " Diligent, Fast and Ally",
+      details: "The DFA promise:",
+    },
     {
       image: require("../../../assets/img/carousel-item-4.png"),
       header: "The DFA DNA - Deft, Formidable & Astute",
-      details: "DFA Solicitors, We are",
+      details: "DFA Solicitors",
     },
   ];
 

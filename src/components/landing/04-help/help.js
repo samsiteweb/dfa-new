@@ -20,7 +20,7 @@ const Help = () => {
   return (
     <div className="helpContainer">
       <Flip right>
-        <p style={{ color: "#828282" }}>Area of practice</p>
+        <p style={{ color: "#828282" }}>Areas of practice</p>
         <h1 style={{ color: "#310C4B" }}>How can we Help You ?</h1>
         <hr className="HR" />
       </Flip>
@@ -32,10 +32,7 @@ const Help = () => {
             <div>
               <h5 className="helpHeader">Legal Advisory & Consultancy</h5>
               <hr className="helpHR" />
-              <p className="paragragh">
-                There are many variations of passages of Lorem There are many
-                variations of passages of Lorem
-              </p>
+            
             </div>
           </div>
 

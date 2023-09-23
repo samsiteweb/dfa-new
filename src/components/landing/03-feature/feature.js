@@ -12,7 +12,7 @@ function FeaturedAttorney() {
   return (
     <div className="featureDiv">
       <Flip right>
-        <h4 style={{ color: "#828282" }}>Meet Our Senior Partner</h4>
+        <h4 style={{ color: "#828282" }}>Meet Our Founder & Managing Partner</h4>
         <h1 style={{ color: "#310C4B" }}>Featured Attorney</h1>
         <hr className="HR" />
       </Flip>
@@ -22,7 +22,7 @@ function FeaturedAttorney() {
           <div className="featuring">
             <img src={Lawyer} alt="" className="lawyerImg" />
             <h2 className="featureName">Mrs. Abidemi Ademola</h2>
-            <h4 className="featurePosition">Senior Partner</h4>
+            <h4 className="featurePosition">Managing Partner</h4>
           </div>
         </Slide>
         <Slide right>

@@ -15,16 +15,8 @@ function LegalExperience() {
 
         <div className="legalDetailsDiv">
           <p className="legalDetailsPar">
-            As a prestigious law firm, we consistently are committed to
-            delivering exceptional legal solutions. With a keen understanding of
-            diverse legal matters, we provided comprehensive research, drafted
-            persuasive legal documents, and effectively communicated with
-            clients to address their needs. Collaborating closely with seasoned
-            attorneys, we have contributed to successful case outcomes and
-            assisted in complex negotiations. Our Team possesses strong
-            analytical skills, a meticulous attention to detail, and a
-            client-centered approach to problem-solving, solidifying our
-            dedication to upholding the highest standards of legal excellence."
+          We are consistently committed to delivering exceptional legal solutions. With a keen understanding of diverse legal matters, we provide comprehensive research, top notch advice / documentation, and effective resolution to address clients’ needs. Collaborating closely with seasoned attorneys, we have contributed to successful outcomes and assisted in complex negotiations and transactions. 
+          Our Team possesses strong technical skills, meticulous attention to details, and a client-centered approach to problem-solving, solidifying our dedication to upholding the highest standards of excellence.
           </p>
           <div className="featureDetailsDivInner" >
             <Link to="/about"><Button>learn more</Button>  </Link>

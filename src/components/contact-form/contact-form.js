@@ -10,13 +10,10 @@ const ContactForm = () => {
     <div className="ContactFormDivOutter">
       <div className="ContactFormDiv">
         <Flip right>
-          <h4 className="ContactFormP">
-            Any Legal Problem ? We are ready to fight for our clients!!
-          </h4>
           <h1 style={{ color: "#310C4B" }}>Speed & Quick consulting</h1>
           <hr className="HR" />
           <p className="contactFormH4">
-            Call us 24/7 at (234)818 696 3053 or fill out the form.
+            Call or message this phone number (+234) 818 696 3053 or fill out the form and click send message.
           </p>
         </Flip>
 

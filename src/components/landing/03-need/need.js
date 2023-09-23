@@ -23,7 +23,7 @@ const Need = () => {
           </p>
           <p className="needP">
             With almost three(3) decades of providing innovative legal solutions
-            and delivering exceptional legal services, DFA Solicitors is
+            and delivering exceptional legal services, the DFA team is
             well-equipped to act as your pillar of support to successfully lock
             sustainable life and business transactions.
           </p>
