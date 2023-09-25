@@ -27,16 +27,11 @@ function FeaturedAttorney() {
         </Slide>
         <Slide right>
           <p className="featureDetailsPar">
-            Mrs. Abidemi Ademola is a highly skilled and well experienced
-            Corporate Counsel, Governance Professional and Executive Business
-            Leader with over 27 years of Commercial Law and Corporate Governance
-            practice in Nigeria and West Africa. Passionately driven by a
-            personal purpose to build a lasting legacy by shaping capability in
-            Law, Governance, Risk and Compliance, her forte is to proactively
-            identify legal, regulatory, compliance and corporate governance
-            risks and develop innovative mitigations/solutions to enable
-            seamless operations and sustainability. Abidemi has been
-            instrumental in building
+          Abidemi Ademola is a highly skilled and well experienced Corporate Counsel, Governance
+          Professional and Executive Business Leader with over 27 years of Commercial Law and Corporate Governance practice in Nigeria and West Africa.
+          </p>
+          <p className="featureDetailsPar">
+          Passionately driven by a personal purpose to build a lasting legacy by shaping capability in Law, Governance, Risk and Compliance, her forte is to proactively identify legal, regulatory, compliance and corporate governance risks and develop innovative mitigations/solutions to enable seamless operations and sustainability.
           </p>
           <div className="featureDetailsDivInner">
           <Link to="/about"> <Button>learn more</Button> </Link>

@@ -10,6 +10,7 @@ import Resource from "./components/cases/[slug]/resource/resource";
 import Contact from "./pages/contact";
 import Footer from "./components/footer/footer";
 import PracticeArea from "./pages/practice-area";
+import AboutDfa from "./pages/about-dfa";
 
 const App = () => {
   return (
@@ -17,8 +18,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" exact element={<Landing />} />
-        <Route path="/about"  element={<About />} />
-        <Route path="/about-dfa-solicitors"  element={<About />} />
+        <Route path="/about"  element={<AboutDfa/>} />
+        <Route path="/about-dfa-solicitors" element={<About/>} />
         <Route path="/esg"  element={<ESG />} />
         <Route path="/esg/all-resources"  element={<AllResources />} />
         <Route path="/esg/all-resources/12345/resource"  element={<Resource />} />

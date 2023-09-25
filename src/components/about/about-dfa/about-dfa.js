@@ -1,10 +1,10 @@
 import React from "react";
-import "./about-founder.css";
+import "./about-dfa.css";
 
 import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
 
-const AboutDfa = () => {
+const AboutDfaSolicitors = () => {
   return (
     <div className="aboutFounderContainer">
       <Flip right>
@@ -96,4 +96,4 @@ const AboutDfa = () => {
   );
 };
 
-export default AboutDfa;
+export default AboutDfaSolicitors;

@@ -53,7 +53,7 @@ const Footer = () => {
             contact
           </Link>
           <Link to="/esg/all-resources" className="productLink">
-                  resources
+            resources
           </Link>
         </div>
         <div>
