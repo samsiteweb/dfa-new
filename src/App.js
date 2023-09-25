@@ -18,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Landing />} />
         <Route path="/about"  element={<About />} />
+        <Route path="/about-dfa-solicitors"  element={<About />} />
         <Route path="/esg"  element={<ESG />} />
         <Route path="/esg/all-resources"  element={<AllResources />} />
         <Route path="/esg/all-resources/12345/resource"  element={<Resource />} />

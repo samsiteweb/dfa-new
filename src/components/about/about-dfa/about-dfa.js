@@ -4,9 +4,7 @@ import "./about-founder.css";
 import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
 
-import FounderImg from "../../../assets/img/founder.jpg";
-
-const AboutFounder = () => {
+const AboutDfa = () => {
   return (
     <div className="aboutFounderContainer">
       <Flip right>
@@ -98,4 +96,4 @@ const AboutFounder = () => {
   );
 };
 
-export default AboutFounder;
+export default AboutDfa;

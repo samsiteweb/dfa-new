@@ -47,7 +47,7 @@ const AboutFounder = () => {
           <hr className="founderSkillsHR" />
           <p className="founderSkillsP">
           Abidemi holds a Bachelor of Laws degree from the Obafemi Awolowo University, Ile-Ife., a Master of Laws from the University of Lagos, Akoka and an MBA Leadership from Walden University, United States.
-She is a Fellow of the Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN) and was a member of ICSAN Governing Council in 2022/2023. She is also a Fellow of the WIMBOARD Institute, a WIMBIZ/IE University, Madrid Executive Education Programme for Women on Boards.
+          She is a Fellow of the Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN) and was a member of ICSAN Governing Council in 2022/2023. She is also a Fellow of the WIMBOARD Institute, a WIMBIZ/IE University, Madrid Executive Education Programme for Women on Boards.
           </p>
           <p className="founderSkillsP">
           Abidemi is a member of the Nigerian Bar Association, the Society for Corporate Governance and the Institute of Directors, Nigeria. She was the pioneer chairperson of the Corporate Counsel Committee of the NBA Section on Business Law and is currently an Officer of the Corporate Counsel Committee of the NBA Women Forum. Abidemi has authored articles and co-authored books on Law & Corporate Governance. She is a trained trainer, an international speaker and is currently on the training faculty of the Chartered Institute of Directors, Nigeria.
