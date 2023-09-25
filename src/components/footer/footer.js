@@ -76,15 +76,15 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="productH2">contact us</h2>
-          <p className="productLink">Phone No: (+234) 818 696 3053</p>
-          <p className="productLink">
-            Email Address: DFASolicitors@outlook.com
+          <p className="noCapProductLink">Phone No: (+234) 818 696 3053</p>
+          <p className="noCapProductLink">
+            Email Address: official@dfasolicitors.com
           </p>
         </div>
       </div>
       <hr className="footerHR" />
       <p className="footerBottom">
-        Privacy Policy | © 2023 Barristar. All rights reserved
+        © 2023 DFA Solicitors. All rights reserved
       </p>
     </div>
   );
