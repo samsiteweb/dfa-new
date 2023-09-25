@@ -19,7 +19,7 @@ function LegalExperience() {
           Our Team possesses strong technical skills, meticulous attention to details, and a client-centered approach to problem-solving, solidifying our dedication to upholding the highest standards of excellence.
           </p>
           <div className="featureDetailsDivInner" >
-            <Link to="/about-dfa-solicitors"><Button>learn more</Button>  </Link>
+            <Link to="/about"><Button>learn more</Button>  </Link>
             
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />

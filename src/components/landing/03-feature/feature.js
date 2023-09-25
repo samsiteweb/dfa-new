@@ -34,7 +34,7 @@ function FeaturedAttorney() {
           Passionately driven by a personal purpose to build a lasting legacy by shaping capability in Law, Governance, Risk and Compliance, her forte is to proactively identify legal, regulatory, compliance and corporate governance risks and develop innovative mitigations/solutions to enable seamless operations and sustainability.
           </p>
           <div className="featureDetailsDivInner">
-          <Link to="/about"> <Button>learn more</Button> </Link>
+          <Link to="/about-dfa-solicitors"> <Button>learn more</Button> </Link>
             {/* <div className="lineDiv">
             <img src={PurpleLine} alt="" className="lineImg" />
             <img src={PurpleLineLight} alt="" className="lineImgLight" />
