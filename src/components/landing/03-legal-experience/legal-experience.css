@@ -10,6 +10,7 @@
 }
 .legalDetailsPar {
   line-height: 188%;
+  text-align: justify;
 }
 .legalDetailsDivInner {
   margin-top: 38px;
@@ -27,9 +28,6 @@
 
 @media screen and (max-width: 600px) {
   .legalDiv {
-    padding: 116px 20px;
-  }
-  .legalDetailsPar {
-    text-align: left;
+    padding: 80px 20px;
   }
 }

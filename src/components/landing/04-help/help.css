@@ -9,6 +9,7 @@
 .HR {
   width: 76px;
   border: 1px solid #828282;
+  margin-top: 5px;
 }
 .gridedGap {
   display: grid;
@@ -21,7 +22,9 @@
   gap: 15.74px;
   align-items: flex-start;
 }
-.helpCard2, .helpCard3, .helpCard4 {
+.helpCard2,
+.helpCard3,
+.helpCard4 {
   display: flex;
   gap: 15.74px;
   margin-top: 20px;
@@ -52,7 +55,6 @@
   border: 1px solid #828282;
 }
 
-
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
 }
 
@@ -68,12 +70,12 @@
   }
   .gridedGap {
     display: block;
-    margin: 0;
+    margin-top: 40px;
   }
-  .helpCard {
-    margin: 0;
-  }
-  .helpCard2, .helpCard3, .helpCard4 {
-    margin: 0;
+  .helpCard,
+  .helpCard2,
+  .helpCard3,
+  .helpCard4 {
+    margin-top: 40px;
   }
 }

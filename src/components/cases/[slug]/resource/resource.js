@@ -1,50 +1,74 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "./resource.css";
-import ResourceBG from "../../../../assets/img/DFA Solicitors (1)/Image.jpg";
+import axios from "axios";
 
 const Resource = () => {
+  const { postId } = useParams(); // Get the postId from the URL parameter
+  const [post, setPost] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const space = "cqcznfulj84y";
+    const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+
+    const fetchPost = async () => {
+      try {
+        const response = await axios.get(
+          `https://cdn.contentful.com/spaces/${space}/environments/master/entries/${postId}?access_token=${accessToken}`
+        );
+
+        const postData = response.data.fields;
+
+        if (postData.postImage) {
+          const imageUrl = await fetchImage(postData.postImage.sys.id);
+          postData.imageUrl = imageUrl;
+        }
+
+        setPost(postData);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching post data from Contentful:", error);
+      }
+    };
+
+    fetchPost();
+  }, [postId]);
+
+  const fetchImage = async (assetId) => {
+    try {
+      const space = "cqcznfulj84y";
+      const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+
+      const response = await axios.get(
+        `https://cdn.contentful.com/spaces/${space}/environments/master/assets/${assetId}?access_token=${accessToken}`
+      );
+
+      const assetData = response.data.fields;
+      return assetData.file.url;
+    } catch (error) {
+      console.error("Error fetching image from Contentful:", error);
+      return "";
+    }
+  };
+
   return (
     <div className="resourceDiv">
-      
-      <h1 className="resourceHead">
-        Why Legal Advisor is Needed before starting your business
-      </h1>
-      <p className="resourceP">
-        Corem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
-      <img src={ResourceBG} alt="" className="resourceImg" />
-
-      <div>
-        <h2 className="resourceTitle">Corem ipsum dolor sit amet</h2>
-        <p className="resourcePar">
-          Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Corem ipsum dolor sit amet, consectetur adipiscing
-          elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos.
-        </p>
-        <p className="resourcePar">
-          Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Corem ipsum dolor sit amet, consectetur adipiscing
-          elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos.
-        </p>
-        <h2 className="resourceTitle">Corem ipsum dolor sit amet</h2>
-        <p className="resourcePar">
-          consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-          ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Corem ipsum dolor
-          sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-          interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos himenaeos.
-        </p>
-      </div>
-
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div>
+          <h1 className="resourceHead">{post.postTitle}</h1>
+          {post.imageUrl && (
+            <img
+              src={post.imageUrl}
+              alt={post.postTitle}
+              className="resourceImg"
+            />
+          )}
+          <p className="resourcePar">{post.postContent}</p>
+        </div>
+      )}
     </div>
   );
 };

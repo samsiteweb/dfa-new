@@ -7,8 +7,8 @@ import Need from "../components/landing/03-need/need";
 import Help from "../components/landing/04-help/help";
 import FeaturedAttorney from "../components/landing/03-feature/feature";
 import Pricing from "../components/pricing/pricing";
-import ContactForm from "../components/contact-form/contact-form";
 import Article from "../components/article/article";
+import ContactForm from "../components/contact-form/contact-form";
 
 const Landing = () => {
   return (

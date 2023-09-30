@@ -2,14 +2,17 @@
   padding: 0 135px;
 }
 .checkinContainerInner {
+  width: 100%;
   background: #331440;
   display: flex;
-  justify-content: space-around;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 20px;
   padding: 10px 40px;
   margin-top: -180px;
   z-index: 999;
 }
 .checkinCard {
+  width: 100%;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -61,17 +64,25 @@
     padding: 0 40px;
   }
   .checkinContainerInner {
-    grid-template-columns: 0.5fr 1.5fr 1.5fr;
+    padding: 0;
+    margin-top: -230px;
+  }
+  .checkinCard {
+    padding: 20px 40px;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .checkinContainer {
-    padding: 0 40px;
+    padding: 0;
   }
   .checkinContainerInner {
     display: block;
-    margin-top: -100px;
+    margin-top: -200px;
+    padding: 0;
+  }
+  .checkinCard {
+    padding: 20px 40px;
   }
 }
 
@@ -81,8 +92,8 @@
   }
   .checkinContainerInner {
     display: block;
-    padding: 10px 5px;
-    margin: 0;
+    padding: 10px 0;
+    margin-top: -150px;
   }
 }
 @media only screen and (max-width: 300px) and (min-width: 120px) {
@@ -91,8 +102,7 @@
   }
   .checkinContainerInner {
     display: block;
-    padding: 10px 5px;
+    padding: 0;
     overflow-x: hidden;
-    margin: 0;
   }
 }

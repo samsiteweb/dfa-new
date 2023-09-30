@@ -17,7 +17,7 @@
   height: 542.093px;
 }
 .aboutFounderDetailsDiv {
-  padding: 0 10px;
+  padding: 0 20px;
   position: relative;
 }
 .founderName {
@@ -29,7 +29,7 @@
   width: 373px;
 }
 .founderPosition {
-  margin-bottom: 18px;
+  margin-bottom: 38px;
 }
 .founderIntro {
   text-align: justify;
@@ -55,12 +55,11 @@
   line-height: 33px;
   text-align: justify;
 }
-.founderSkillsList {
-  line-height: 15px;
-  margin-left: 30px;
-}
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .aboutFounderContainer {
+    padding: 80px 156px;
+  }
   .aboutFounderMiddle {
     display: block;
   }
@@ -76,7 +75,7 @@
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .aboutFounderContainer {
-    padding: 116px 80px;
+    padding: 40px 80px;
   }
   .aboutFounderMiddle {
     display: block;
@@ -93,7 +92,7 @@
 
 @media screen and (max-width: 600px) {
   .aboutFounderContainer {
-    padding: 116px 20px;
+    padding: 40px 20px;
   }
   .aboutFounderMiddle {
     display: block;

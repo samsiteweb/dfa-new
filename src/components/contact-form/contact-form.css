@@ -1,5 +1,4 @@
 .ContactFormDivOutter {
-  background: #f7f8f9;
   padding: 116px 286px;
 }
 .ContactFormDiv {
@@ -44,7 +43,8 @@
   border: 1.594px solid #dcbaea;
   outline: none;
 }
-.inputTag::placeholder, .messageInput::placeholder {
+.inputTag::placeholder,
+.messageInput::placeholder {
   color: #333;
   font-family: quicksand;
   font-size: 14.118px;
@@ -74,19 +74,19 @@
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .ContactFormDivOutter {
     padding: 116px 156px;
-  } 
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .ContactFormDivOutter {
     padding: 116px 80px;
-  } 
+  }
 }
 
 @media screen and (max-width: 600px) {
   .ContactFormDivOutter {
-    padding: 116px 20px;
-  } 
+    padding: 40px 20px;
+  }
   .contactFormH4 {
     text-align: center;
     font-size: 12px;

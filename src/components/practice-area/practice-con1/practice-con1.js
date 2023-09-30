@@ -3,6 +3,7 @@ import "./practice-con1.css";
 
 import Practice2 from "../../../assets/img/practice2.jpg";
 import Practice3 from "../../../assets/img/practice3.jpg";
+import Dot from "../../../assets/icons/dot.png";
 
 const PracticeCon1 = () => {
   return (
@@ -27,27 +28,61 @@ const PracticeCon1 = () => {
       </p>
 
       <div className="coloredCardDiv">
-        <ul className="slimCardUL">
+        <div className="slimCardUL">
           <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
             <li>Legal advisory and consultancy</li>
           </div>
-          <li className="slimCardLI">Contracts & Bespoke Agreements</li>
-          <li className="slimCardLI">Start Up & Technology Law</li>
-          <li className="slimCardLI">Employment Law</li>
-          <li className="slimCardLI">Data Privacy</li>
-          <li className="slimCardLI">Regulatory & enforcement </li>
-          <li className="slimCardLI">Antitrust/Competition Law</li>
-          <li className="slimCardLI">Intellectual Property </li>
-          <li className="slimCardLI">Transactions & Projects</li>
-          <li className="slimCardLI">
-            Corporate Governance & Board Advisory/Services (Evaluation &
-            Trainings)
-          </li>
-          <li className="slimCardLI">Case Assessment/Review</li>
-          <li className="slimCardLI">Commercial Dispute Resolution </li>
-          <li className="slimCardLI">Legal Risk Management </li>
-          <li className="slimCardLI">Legal Risk Management </li>
-        </ul>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Contracts & Bespoke Agreements</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Start Up & Technology Law</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Employment Law</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Data Privacy</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Regulatory & enforcement</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Antitrust/Competition Law</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Intellectual Property</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Transactions & Projects</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Corporate Governance & Board Advisory/Services (Evaluation &
+            Trainings)</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Case Assessment/Review</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Commercial Dispute Resolution</li>
+          </div>
+          <div className="slimCardLI">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Legal Risk Management</li>
+          </div>
+        </div>
       </div>
 
       <h2 className="PracticeCon1H2">Corporate</h2>
@@ -62,27 +97,61 @@ const PracticeCon1 = () => {
       </p>
 
       <div className="coloredCardDiv">
-        <ul className="slimCardUL">
+        <div className="slimCardUL">
           <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
             <li>Legal advisory and consultancy</li>
           </div>
-          <li className="slimCardLI2">Contracts & Bespoke Agreements</li>
-          <li className="slimCardLI2">Start Up & Technology Law</li>
-          <li className="slimCardLI2">Employment Law</li>
-          <li className="slimCardLI2">Data Privacy</li>
-          <li className="slimCardLI2">Regulatory & enforcement </li>
-          <li className="slimCardLI2">Antitrust/Competition Law</li>
-          <li className="slimCardLI2">Intellectual Property </li>
-          <li className="slimCardLI2">Transactions & Projects</li>
-          <li className="slimCardLI2">
-            Corporate Governance & Board Advisory/Services (Evaluation &
-            Trainings)
-          </li>
-          <li className="slimCardLI2">Case Assessment/Review</li>
-          <li className="slimCardLI2">Commercial Dispute Resolution </li>
-          <li className="slimCardLI2">Legal Risk Management </li>
-          <li className="slimCardLI2">Legal Risk Management </li>
-        </ul>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Contracts & Bespoke Agreements</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Start Up & Technology Law</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Employment Law</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Data Privacy</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Regulatory & enforcement</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Antitrust/Competition Law</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Intellectual Property</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Transactions & Projects</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Corporate Governance & Board Advisory/Services (Evaluation &
+            Trainings)</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Case Assessment/Review</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Commercial Dispute Resolution</li>
+          </div>
+          <div className="slimCardLI2">
+            <img src={Dot} alt="" className="DotImg" />
+            <li>Legal Risk Management</li>
+          </div>
+        </div>
       </div>
     </div>
   );

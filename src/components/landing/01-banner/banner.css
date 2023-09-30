@@ -101,7 +101,8 @@
     height: 60vh;
   }
   .carousel-details {
-    margin-top: -100px;
+    margin-top: 200px;
+    padding: 0 80px !important;
   }
 }
 
@@ -110,7 +111,7 @@
     height: 70vh;
   }
   .carousel-details {
-    margin-top: -100px;
+    margin-top: 200px;
   }
   .carousel-details-Par {
     font-size: 18px;
@@ -131,11 +132,11 @@
   }
   .carousel-details-Par {
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 18px;
   }
   .carousel-details-H2 {
     width: 100%;
-    font-size: 40px;
+    font-size: 32px;
     margin: 0 0 15px 0;
   }
 }

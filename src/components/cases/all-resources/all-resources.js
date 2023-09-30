@@ -1,166 +1,114 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./all-resources.css";
+import axios from "axios";
 
-import Image1 from "../../../assets/img/DFA Solicitors/Image.jpg";
 import Button from "../../button/button";
 
 const AllResources = () => {
-  let navigate = useNavigate();
+  const [entries, setEntries] = useState([]);
+  const [entryIds, setEntryIds] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const space = "cqcznfulj84y";
+    const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+    const contentType = "dfaBlog";
+
+    const fetchEntries = async () => {
+      try {
+        const response = await axios.get(
+          `https://cdn.contentful.com/spaces/${space}/environments/master/entries?content_type=${contentType}&access_token=${accessToken}`
+        );
+
+        const entryDataArray = response.data.items.map((item) => item.fields);
+        const ids = response.data.items.map((item) => item.sys.id);
+
+        await Promise.all(
+          entryDataArray.map(async (entryData) => {
+            if (entryData.postImage) {
+              const imageUrl = await fetchImage(entryData.postImage.sys.id);
+              entryData.imageUrl = imageUrl;
+            }
+          })
+        );
+
+        setEntries(entryDataArray);
+        setEntryIds(ids);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data from Contentful:", error);
+      }
+    };
+
+    fetchEntries();
+  }, []);
+
+  const fetchImage = async (assetId) => {
+    try {
+      const space = "cqcznfulj84y";
+      const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+
+      const response = await axios.get(
+        `https://cdn.contentful.com/spaces/${space}/environments/master/assets/${assetId}?access_token=${accessToken}`
+      );
+      const assetData = response.data.fields;
+      return assetData.file.url;
+    } catch (error) {
+      console.error("Error fetching image from Contentful:", error);
+      return "";
+    }
+  };
+
+  function replaceWithBr2(value) {
+    let str = value;
+    let result = str?.split("\n");
+    return result.map((i, key) => <p key={key}>{i + "\n"}</p>);
+  }
+
+  const cutText = (str) => {
+    if (str?.length > 45) {
+      str = str?.substring(0, 300) + " ...";
+    }
+    return str + "";
+  };
+
   return (
     <div className="AllResourcesDiv">
       <div className="allResourcesHeadDiv">
         <h1 className="allResourcesHead">All Resources</h1>
         <hr className="allResourcesHR" />
       </div>
-
-      <div className="AllResourcesinner">
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
         <div>
-          <img src={Image1} alt="" className="resourcesImg" />
+          {entries.map((entry, index) => (
+            <div key={index} className="AllResourcesinner">
+              <div>
+                {entry.imageUrl && (
+                  <img
+                    src={entry.imageUrl}
+                    alt={entry.postTitle}
+                    className="resourcesImg"
+                  />
+                )}
+              </div>
+              <div className="allResourcesDetails">
+                <h2 className="allResourcesTitle">{entry.postTitle}</h2>
+                <p className="allResourcesPar">
+                {replaceWithBr2(cutText(entry.postContent))}
+                  </p>
+                <div className="allResourcesBtnDiv">
+                  <Link to={`/esg/all-resources/${entryIds[index]}/resource`}>
+                    <Button>Read More</Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="allResourcesDetails">
-          <h2 className="allResourcesTitle">
-            Afrika Cheap Airline Tickets Case
-          </h2>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <div className="allResourcesBtnDiv">
-            <Button
-              onClick={() => {
-                navigate("/esg/all-resources/12345/resource");
-              }}
-            >
-              read more...
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      <div className="AllResourcesinner">
-        <div>
-          <img src={Image1} alt="" className="resourcesImg" />
-        </div>
-        <div className="allResourcesDetails">
-          <h2 className="allResourcesTitle">RealStasia Contract</h2>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <div className="allResourcesBtnDiv">
-            <Button
-              onClick={() => {
-                navigate("/esg/all-resources/12345/resource");
-              }}
-            >
-              read more...
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      <div className="AllResourcesinner">
-        <div>
-          <img src={Image1} alt="" className="resourcesImg" />
-        </div>
-        <div className="allResourcesDetails">
-          <h2 className="allResourcesTitle">
-            Cheap Airline Tickets Great Ways To Save
-          </h2>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <div className="allResourcesBtnDiv">
-            <Button
-              onClick={() => {
-                navigate("/esg/all-resources/12345/resource");
-              }}
-            >
-              read more...
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      <div className="AllResourcesinner">
-        <div>
-          <img src={Image1} alt="" className="resourcesImg" />
-        </div>
-        <div className="allResourcesDetails">
-          <h2 className="allResourcesTitle">Hotels and Suit Law Suits</h2>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <p className="allResourcesPar">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
-          <div className="allResourcesBtnDiv">
-            <Button
-              onClick={() => {
-                navigate("/esg/all-resources/12345/resource");
-              }}
-            >
-              read more...
-            </Button>
-          </div>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
