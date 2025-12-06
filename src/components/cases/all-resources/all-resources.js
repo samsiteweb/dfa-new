@@ -11,8 +11,8 @@ const AllResources = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const space = "cqcznfulj84y";
-    const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+    const space = process.env.REACT_APP_CONTENTFUL_SPACE_ID || "cqcznfulj84y";
+    const accessToken = process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN || "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
     const contentType = "dfaBlog";
 
     const fetchEntries = async () => {
@@ -46,8 +46,8 @@ const AllResources = () => {
 
   const fetchImage = async (assetId) => {
     try {
-      const space = "cqcznfulj84y";
-      const accessToken = "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
+      const space = process.env.REACT_APP_CONTENTFUL_SPACE_ID || "cqcznfulj84y";
+      const accessToken = process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN || "EGz8IvfDmyb63CMVa4xK6Hr3S-hL8Hm6ffcHmDNy-XM";
 
       const response = await axios.get(
         `https://cdn.contentful.com/spaces/${space}/environments/master/assets/${assetId}?access_token=${accessToken}`

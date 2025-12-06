@@ -1,14 +1,19 @@
 import React from "react";
 import "./legal-experience.css";
-import Slide from "react-reveal/Slide";
+import { motion } from "framer-motion";
 
 import Button from "../../button/button";
 import { Link } from "react-router-dom";
 
 function LegalExperience() {
   return (
-    <Slide left>
-      <div className="legalDiv">
+    <motion.div
+      className="legalDiv"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
         <h4 style={{ color: "#828282" }}>Welcome to DFA SOLICITORS</h4>
         <h1 style={{ color: "#310C4B" }}>Over 3 Decades of Legal Experience</h1>
         <hr className="HR" />
@@ -33,8 +38,7 @@ function LegalExperience() {
           </div> */}
           </div>
         </div>
-      </div>
-    </Slide>
+    </motion.div>
   );
 }
 

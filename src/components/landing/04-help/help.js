@@ -1,8 +1,6 @@
 import React from "react";
 import "./help.css";
-
-import Slide from "react-reveal/Slide";
-import Flip from "react-reveal/Flip";
+import { motion } from "framer-motion";
 
 import user from "../../../assets/icons/users.svg";
 import anchor from "../../../assets/icons/anchor.svg";
@@ -19,14 +17,24 @@ import box from "../../../assets/icons/codesandbox.svg";
 const Help = () => {
   return (
     <div className="helpContainer">
-      <Flip right>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
         <p style={{ color: "#828282" }}>Areas of practice</p>
         <h1 style={{ color: "#310C4B" }}>How can we Help You ?</h1>
         <hr className="HR" />
-      </Flip>
+      </motion.div>
 
-      <Slide right>
-        <div className="gridedGap">
+      <motion.div
+        className="gridedGap"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+      >
           <div className="helpCard">
             <img src={user} alt="" className="helpImg" />
             <div>
@@ -167,8 +175,7 @@ const Help = () => {
               </p>
             </div>
           </div>
-        </div>
-      </Slide>
+      </motion.div>
     </div>
   );
 };

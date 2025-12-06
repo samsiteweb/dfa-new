@@ -1,9 +1,7 @@
 import React from "react";
 import "./feature.css";
 import Button from "../../button/button";
-
-import Slide from "react-reveal/Slide";
-import Flip from "react-reveal/Flip";
+import { motion } from "framer-motion";
 
 import Lawyer from "../../../assets/img/abidemi.jpg";
 import { Link } from "react-router-dom";
@@ -11,21 +9,35 @@ import { Link } from "react-router-dom";
 function FeaturedAttorney() {
   return (
     <div className="featureDiv">
-      <Flip right>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
         <h4 style={{ color: "#828282" }}>Meet Our Founder & Managing Partner</h4>
         <h1 style={{ color: "#310C4B" }}>Featured Attorney</h1>
         <hr className="HR" />
-      </Flip>
+      </motion.div>
 
       <div className="featureDetailsDiv">
-        <Slide left>
-          <div className="featuring">
-            <img src={Lawyer} alt="" className="lawyerImg" />
-            <h2 className="featureName">Mrs. Abidemi Ademola</h2>
-            <h4 className="featurePosition">Managing Partner</h4>
-          </div>
-        </Slide>
-        <Slide right>
+        <motion.div
+          className="featuring"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <img src={Lawyer} alt="" className="lawyerImg" />
+          <h2 className="featureName">Mrs. Abidemi Ademola</h2>
+          <h4 className="featurePosition">Managing Partner</h4>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
           <p className="featureDetailsPar">
           Abidemi Ademola is a highly skilled and well experienced Corporate Counsel, Governance
           Professional and Executive Business Leader with over 27 years of Commercial Law and Corporate Governance practice in Nigeria and West Africa.
@@ -46,7 +58,7 @@ function FeaturedAttorney() {
             <img src={PurpleLineLight} alt="" className="lineImgLight" />
             </div> */}
           </div>
-        </Slide>
+        </motion.div>
       </div>
     </div>
   );

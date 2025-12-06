@@ -1,7 +1,6 @@
 import React from "react";
 import "./need.css";
-
-import Slide from "react-reveal/Slide";
+import { motion } from "framer-motion";
 
 import Image from "../../../assets/img/Picture Frame.jpg";
 import Button from "../../button/button";
@@ -10,11 +9,22 @@ import { Link } from "react-router-dom";
 const Need = () => {
   return (
     <div className="needContainer">
-      <Slide left>
-        <img src={Image} alt="" className="needImg" />
-      </Slide>
-      <Slide right>
-        <div className="needDetails">
+      <motion.img
+        src={Image}
+        alt=""
+        className="needImg"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      />
+      <motion.div
+        className="needDetails"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
           <h2 className="needHeader">why you need us</h2>
           <p className="needP">
             When navigating life and business, you need to be dead sure that you
@@ -31,8 +41,7 @@ const Need = () => {
           <Link to="/about"> <Button>more about us</Button>  </Link>
             
           </div>
-        </div>
-      </Slide>
+      </motion.div>
     </div>
   );
 };

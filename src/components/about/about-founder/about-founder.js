@@ -1,33 +1,43 @@
 import React from "react";
 import "./about-founder.css";
-
-import Slide from "react-reveal/Slide";
-import Flip from "react-reveal/Flip";
+import { motion } from "framer-motion";
 
 import FounderImg from "../../../assets/img/founder.jpg";
 
 const AboutFounder = () => {
   return (
     <div className="aboutFounderContainer">
-      <Flip right>
-        <div className="aboutFounderTop">
-          <h4 style={{ color: "#828282" }}>Welcome To DFA Solicitors</h4>
-          <h1 style={{ color: "#310C4B" }}>Firm Overview</h1>
-          <hr className="HR" />
-        </div>
-      </Flip>
+      <motion.div
+        className="aboutFounderTop"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
+        <h4 style={{ color: "#828282" }}>Welcome To DFA Solicitors</h4>
+        <h1 style={{ color: "#310C4B" }}>Firm Overview</h1>
+        <hr className="HR" />
+      </motion.div>
 
       <div className="aboutFounderMiddle">
-        <Slide left>
-          <div>
-            <img src={FounderImg} className="founderImg" alt="" />
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="aboutFounderDetailsDiv">
-            <h4 className="founderName">Mrs. Abidemi Ademola</h4>
-            <p className="founderPosition">Senior Partner</p>
-            <p className="founderIntro">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <img src={FounderImg} className="founderImg" alt="" />
+        </motion.div>
+        <motion.div
+          className="aboutFounderDetailsDiv"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <h4 className="founderName">Mrs. Abidemi Ademola</h4>
+          <p className="founderPosition">Senior Partner</p>
+          <p className="founderIntro">
               A highly skilled and well experienced Corporate Counsel,
               Governance Professional and Executive Business Leader with over 27
               years of Commercial Law and Corporate Governance practice in
@@ -40,12 +50,16 @@ const AboutFounder = () => {
               instrumental in building strong legal teams and delivering several
               epic legal transactions and projects across West Africa.
             </p>
-          </div>
-        </Slide>
+        </motion.div>
       </div>
 
       <div className="aboutFounderBottom">
-        <Slide left>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           <h4 className="founderSkills">Personal Experience</h4>
           <hr className="founderSkillsHR" />
           <p className="founderSkillsP">
@@ -58,9 +72,14 @@ const AboutFounder = () => {
             decision to set up DFA Solicitors is well aligned with her purpose
             to build a lasting legacy and leverage the opportunity for greater
             impact.
-          </p>
-        </Slide>
-        <Slide right>
+            </p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
           <h4 className="founderSkills">Education</h4>
           <hr className="founderSkillsHR" />
           <ul>
@@ -83,9 +102,14 @@ const AboutFounder = () => {
               Boards.
             </li>
           </ul>
-        </Slide>
+        </motion.div>
 
-        <Slide left>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
           <h4 className="founderSkills">membership</h4>
           <hr className="founderSkillsHR" />
           <ul>
@@ -102,17 +126,22 @@ const AboutFounder = () => {
               the NBA Women Forum.
             </li>
           </ul>
-        </Slide>
-        <Slide right>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
           <h4 className="founderSkills">Publications</h4>
           <hr className="founderSkillsHR" />
           <p className="founderSkillsP">
             Abidemi has authored articles and co-authored books on Law &
             Corporate Governance. She is a trained trainer, an international
             speaker and is currently on the training faculty of the Institute of
-            Directors, Nigeria.
-          </p>
-        </Slide>
+              Directors, Nigeria.
+            </p>
+        </motion.div>
       </div>
     </div>
   );
