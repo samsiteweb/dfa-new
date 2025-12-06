@@ -510,8 +510,11 @@
 
   .welcomeCtaBtn {
     width: 100%;
+    max-width: 100%;
     justify-content: center;
-    padding: 14px 32px;
+    padding: 14px 28px;
+    font-size: 14px;
+    box-sizing: border-box;
   }
 
   .achievementGrid {
@@ -564,7 +567,7 @@
 
 @media screen and (max-width: 480px) {
   .premiumWelcomeSection {
-    padding: 60px 15px;
+    padding: 60px 18px;
   }
 
   .welcomeTitle {
@@ -575,11 +578,39 @@
     width: 80px;
   }
 
+  .welcomeCtaBtn {
+    padding: 13px 24px;
+    font-size: 13px;
+  }
+
   .achievementCard {
     padding: 24px 20px;
   }
 
   .welcomeFeatureBar {
     padding: 28px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .premiumWelcomeSection {
+    padding: 50px 15px;
+  }
+
+  .welcomeTitle {
+    font-size: 28px;
+  }
+
+  .welcomeCtaBtn {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .quickActionCard {
+    padding: 16px 18px;
+  }
+
+  .quickActionTitle {
+    font-size: 14px;
   }
 }

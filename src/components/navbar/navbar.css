@@ -239,7 +239,7 @@
 .mobileMenuHeader {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 25px 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
