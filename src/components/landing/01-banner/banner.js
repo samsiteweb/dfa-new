@@ -1,85 +1,192 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import "./banner.css";
-
-// import Button from "../../button/button";
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
 
   const slides = [
     {
       image: require("../../../assets/img/carousel-item-2.png"),
-      header: "Law, Corporate Governance & Corporate Services",
-      details: "DFA Solicitors",
+      badge: "Excellence in Legal Practice",
+      title: "Law, Corporate Governance & Corporate Services",
+      subtitle: "Delivering world-class legal solutions for over 30 years",
     },
     {
       image: require("../../../assets/img/carousel-item-1.png"),
-      header: "Your Trusted Pillar For Life And Business",
-      details: "DFA Solicitors",
+      badge: "Your Legal Partner",
+      title: "Your Trusted Pillar For Life And Business",
+      subtitle: "Protecting your interests with expertise and dedication",
     },
     {
       image: require("../../../assets/img/carousel-item-3.png"),
-      header: " Diligent, Fast and Ally",
-      details: "The DFA promise:",
+      badge: "The DFA Promise",
+      title: "Diligent, Fast and Ally",
+      subtitle: "Committed to excellence in every legal matter",
     },
     {
       image: require("../../../assets/img/carousel-item-4.png"),
-      header: "The DFA DNA - Deft, Formidable & Astute",
-      details: "DFA Solicitors",
+      badge: "Our DNA",
+      title: "Deft, Formidable & Astute",
+      subtitle: "Strategic legal counsel that drives success",
     },
   ];
 
-  let autoplayInterval;
-
   useEffect(() => {
-    autoplayInterval = setInterval(nextSlide, 8000);
-    return () => clearInterval(autoplayInterval);
-  }, [currentSlide]);
-
-  const nextSlide = () => {
-    setCurrentSlide((currentSlide + 1) % slides.length);
-  };
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setIsVisible(true);
+      }, 500);
+    }, 8000);
+    
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const handleDotClick = (index) => {
-    clearInterval(autoplayInterval);
-    setCurrentSlide(index);
+    if (index !== currentSlide) {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentSlide(index);
+        setIsVisible(true);
+      }, 500);
+    }
   };
 
+  const currentSlideData = slides[currentSlide];
+
   return (
-    <div className="image-carousel">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
-          style={{
-            backgroundImage: `url(${slide.image})`,
-          }}
-        >
-          <div className="overlay">
-            <div className="carousel-details">
-              <h4 className="carousel-details-Par">{slide.details}</h4>
-              <h2 className="carousel-details-H2">{slide.header}</h2>
-              {/* <div className="BannerbtnDiv">
-                <Button>
-                  <Link to="/contact">contact us now</Link>
-                </Button>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      ))}
-      <div className="carousel-dots-banner">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            className={`carousel-dot-banner ${
-              index === currentSlide ? "active" : ""
-            }`}
-            onClick={() => handleDotClick(index)}
-          ></div>
-        ))}
+    <div className="premiumHero">
+      {/* Background Image Layer */}
+      <div className="heroBackgroundLayer">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSlide}
+            className="heroBackgroundImage"
+            style={{ backgroundImage: `url(${currentSlideData.image})` }}
+            initial={{ scale: 1.2, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+          />
+        </AnimatePresence>
+        <div className="heroOverlay" />
+        <div className="heroGradientOverlay" />
       </div>
+
+      {/* Decorative Elements */}
+      <div className="heroDecorElements">
+        <div className="heroDecorCircle heroDecor1"></div>
+        <div className="heroDecorCircle heroDecor2"></div>
+        <div className="heroDecorGrid"></div>
+      </div>
+
+      {/* Main Content */}
+      <div className="heroContentWrapper">
+        <div className="heroContent">
+          <AnimatePresence mode="wait">
+            {isVisible && (
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.6 }}
+                className="heroTextContent"
+              >
+                {/* Badge */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="heroBadge"
+                >
+                  <span className="badgeDot"></span>
+                  {currentSlideData.badge}
+                </motion.div>
+
+                {/* Main Title */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="heroTitle"
+                >
+                  {currentSlideData.title}
+                </motion.h1>
+
+                {/* Subtitle */}
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="heroSubtitle"
+                >
+                  {currentSlideData.subtitle}
+                </motion.p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Quick Action Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="heroQuickActions"
+        >
+          <a href="https://paystack.com/buy/dfa-expert-advice-fwgpnu" className="quickActionCard">
+            <div className="quickActionIcon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div className="quickActionText">
+              <div className="quickActionTitle">Book Appointment</div>
+              <div className="quickActionDesc">Schedule a consultation</div>
+            </div>
+            <div className="quickActionArrow">→</div>
+          </a>
+
+          <Link to="/contact" className="quickActionCard">
+            <div className="quickActionIcon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div className="quickActionText">
+              <div className="quickActionTitle">Contact Us</div>
+              <div className="quickActionDesc">Get in touch today</div>
+            </div>
+            <div className="quickActionArrow">→</div>
+          </Link>
+        </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+        className="heroScrollIndicator"
+        onClick={handleScrollDown}
+      >
+        <div className="scrollIcon">
+          <div className="scrollWheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </motion.div>
     </div>
   );
 };

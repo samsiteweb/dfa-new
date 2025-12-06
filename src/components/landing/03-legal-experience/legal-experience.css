@@ -1,33 +1,585 @@
-.legalDiv {
-  padding: 116px 286px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.legalDetailsDiv {
-  margin-top: 48px;
-}
-.legalDetailsPar {
-  line-height: 188%;
-  text-align: justify;
-}
-.legalDetailsDivInner {
-  margin-top: 38px;
+/* Premium Welcome Section */
+.premiumWelcomeSection {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 50%, #ffffff 100%);
+  padding: 140px 60px;
+  overflow: hidden;
 }
 
-
-@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+/* Background Decorations */
+.welcomeBgDecor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .legalDiv {
-    padding: 116px 80px;
+.welcomeShape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: welcomeFloat 25s ease-in-out infinite;
+}
+
+.welcomeShape1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(197, 140, 219, 0.15), transparent);
+  top: -150px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.welcomeShape2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(198, 44, 137, 0.12), transparent);
+  bottom: -100px;
+  left: -80px;
+  animation-delay: 10s;
+}
+
+@keyframes welcomeFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.95);
   }
 }
 
-@media screen and (max-width: 600px) {
-  .legalDiv {
+.welcomeGridPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(49, 12, 75, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49, 12, 75, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.5;
+}
+
+/* Container */
+.welcomeContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.welcomeHeader {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.welcomeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, rgba(49, 12, 75, 0.06), rgba(197, 140, 219, 0.1));
+  border: 2px solid rgba(197, 140, 219, 0.25);
+  border-radius: 50px;
+  font-family: poppins;
+  font-size: 13px;
+  font-weight: 700;
+  color: #310c4b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcomeBadge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(197, 140, 219, 0.2), transparent);
+  animation: badgeShimmer 4s infinite;
+}
+
+@keyframes badgeShimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.badgeIcon {
+  font-size: 16px;
+  color: #C62C89;
+  animation: badgeIconRotate 4s ease-in-out infinite;
+}
+
+@keyframes badgeIconRotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+.welcomeTitle {
+  font-family: playfair;
+  font-size: 56px;
+  font-weight: 700;
+  color: #310c4b;
+  line-height: 1.2;
+  margin: 0 0 40px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleHighlight {
+  background: linear-gradient(135deg, #9338b6 0%, #C62C89 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.titleHighlight::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+/* Divider */
+.welcomeDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dividerDot {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #9338b6, #C62C89);
+  border-radius: 50%;
+  animation: dividerPulse 2s ease-in-out infinite;
+}
+
+.dividerDot:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes dividerPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.dividerLine {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(147, 56, 182, 0.3), transparent);
+}
+
+/* Content Layout */
+.welcomeContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+/* Text Content */
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.welcomeParagraph {
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4a5568;
+  line-height: 1.9;
+  margin: 0;
+  text-align: justify;
+}
+
+.welcomeParagraph:first-of-type {
+  font-size: 18px;
+  color: #2d3748;
+}
+
+.welcomeCtaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 36px;
+  background: linear-gradient(135deg, #310c4b 0%, #C62C89 100%);
+  border: none;
+  border-radius: 12px;
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+  margin-top: 16px;
+  box-shadow: 0 10px 30px rgba(49, 12, 75, 0.2);
+}
+
+.welcomeCtaBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #C62C89 0%, #310c4b 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.welcomeCtaBtn:hover::before {
+  opacity: 1;
+}
+
+.welcomeCtaBtn span,
+.welcomeCtaBtn svg {
+  position: relative;
+  z-index: 1;
+}
+
+.welcomeCtaBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(49, 12, 75, 0.3);
+}
+
+.welcomeCtaBtn svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.4s ease;
+}
+
+.welcomeCtaBtn:hover svg {
+  transform: translateX(6px);
+}
+
+/* Achievement Grid */
+.achievementGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.achievementCard {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievementCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.achievementCard:hover::before {
+  transform: scaleX(1);
+}
+
+.achievementCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(197, 140, 219, 0.4);
+  box-shadow: 0 20px 50px rgba(49, 12, 75, 0.12);
+}
+
+.achievementIcon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(147, 56, 182, 0.1), rgba(198, 44, 137, 0.05));
+  border-radius: 14px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+
+.achievementCard:hover .achievementIcon {
+  background: linear-gradient(135deg, #9338b6, #C62C89);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.achievementIcon svg {
+  width: 28px;
+  height: 28px;
+  color: #9338b6;
+  transition: color 0.4s ease;
+}
+
+.achievementCard:hover .achievementIcon svg {
+  color: #ffffff;
+}
+
+.achievementTitle {
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 700;
+  color: #310c4b;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.achievementDesc {
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Feature Bar */
+.welcomeFeatureBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, rgba(49, 12, 75, 0.03), rgba(197, 140, 219, 0.05));
+  border: 1px solid rgba(197, 140, 219, 0.2);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcomeFeatureBar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(197, 140, 219, 0.1), transparent);
+  animation: featureBarShine 8s infinite;
+}
+
+@keyframes featureBarShine {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 200%;
+  }
+}
+
+.featureBarItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 600;
+  color: #310c4b;
+}
+
+.featureBarItem svg {
+  width: 24px;
+  height: 24px;
+  color: #9338b6;
+  flex-shrink: 0;
+}
+
+.featureBarDivider {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(197, 140, 219, 0.4),
+    transparent
+  );
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1400px) {
+  .premiumWelcomeSection {
+    padding: 120px 40px;
+  }
+
+  .welcomeTitle {
+    font-size: 50px;
+  }
+
+  .welcomeContent {
+    gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .premiumWelcomeSection {
+    padding: 100px 30px;
+  }
+
+  .welcomeTitle {
+    font-size: 44px;
+  }
+
+  .welcomeContent {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .achievementGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcomeFeatureBar {
+    gap: 40px;
+    padding: 35px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .premiumWelcomeSection {
     padding: 80px 20px;
+  }
+
+  .welcomeHeader {
+    margin-bottom: 60px;
+  }
+
+  .welcomeBadge {
+    font-size: 11px;
+    padding: 10px 24px;
+    margin-bottom: 24px;
+  }
+
+  .welcomeTitle {
+    font-size: 36px;
+  }
+
+  .welcomeParagraph,
+  .welcomeParagraph:first-of-type {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .welcomeCtaBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 32px;
+  }
+
+  .achievementGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .achievementCard {
+    padding: 28px 24px;
+  }
+
+  .achievementIcon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .achievementIcon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .achievementTitle {
+    font-size: 17px;
+  }
+
+  .achievementDesc {
+    font-size: 13px;
+  }
+
+  .welcomeFeatureBar {
+    flex-direction: column;
+    gap: 28px;
+    padding: 32px 24px;
+  }
+
+  .featureBarItem {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .featureBarDivider {
+    display: none;
+  }
+
+  .welcomeContent {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .premiumWelcomeSection {
+    padding: 60px 15px;
+  }
+
+  .welcomeTitle {
+    font-size: 30px;
+  }
+
+  .dividerLine {
+    width: 80px;
+  }
+
+  .achievementCard {
+    padding: 24px 20px;
+  }
+
+  .welcomeFeatureBar {
+    padding: 28px 20px;
   }
 }
