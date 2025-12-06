@@ -1,86 +1,269 @@
-.PracticeCon1Div {
-  padding: 0 156px 116px 156px;
+/* Premium Practice Area Container */
+.premiumPracticeContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
 }
-.PracticeCon1H2 {
+
+/* Practice Section */
+.practiceSection {
+  margin-bottom: 120px;
+}
+
+.practiceSection:last-child {
+  margin-bottom: 0;
+}
+
+/* Section Header */
+.practiceSectionHeader {
+  margin-bottom: 50px;
+}
+
+.sectionTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.sectionNumber {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: rgba(49, 12, 75, 0.1);
+  line-height: 1;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
   color: #310c4b;
-  font-family: playfair;
-  font-size: 48px;
-  text-transform: capitalize;
-  margin-top: 20px;
+  margin: 0;
+  line-height: 1.2;
 }
-.practiceConImg {
+
+.sectionDivider {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #C62C89, #c58cdb);
+  border-radius: 2px;
+}
+
+/* Image Styling */
+.practiceImageWrapper {
+  position: relative;
   width: 100%;
-  height: auto;
-  margin-top: 38px;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(49, 12, 75, 0.15);
+  margin-bottom: 50px;
 }
-.PracticeCon1Par {
-  margin: 75px 0 40px 0;
-  text-align: justify;
+
+.practiceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
-.coloredCardDiv {
-  margin-top: 87px;
+
+.practiceImageWrapper:hover .practiceImage {
+  transform: scale(1.05);
 }
-.slimCardUL {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20.5px;
+
+.practiceImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(49, 12, 75, 0.3) 100%
+  );
+  pointer-events: none;
 }
-.slimCardLI {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10.243px;
-  border-radius: 6.829px;
-  background: #e486be;
-  width: fit-content;
+
+/* Content */
+.practiceContent {
+  margin-bottom: 60px;
+}
+
+.practiceDescription {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
   color: #333;
-  font-family: quicksand;
-  font-size: 20.486px;
-  font-weight: 400;
-  letter-spacing: 0.171px;
-  list-style-type: none;
+  margin-bottom: 25px;
 }
-.DotImg {
-  width: 10px;
-  height: 10px;
+
+.practiceDescription:last-child {
+  margin-bottom: 0;
 }
-.slimCardLI2 {
-  background: #C58CDB;
+
+/* Services Section */
+.servicesWrapper {
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  padding: 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(49, 12, 75, 0.08);
+}
+
+.servicesTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #310c4b;
+  margin: 0 0 35px 0;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+/* Service Cards */
+.serviceCard {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 10.243px;
-  border-radius: 6.829px;
-  width: fit-content;
-  color: #333;
-  font-family: quicksand;
-  font-size: 20.486px;
-  font-weight: 400;
-  letter-spacing: 0.171px;
-  list-style-type: none;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: default;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-@media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .PracticeCon1Div {
-    padding: 0 156px 116px 156px;
+.serviceCardPink {
+  background: linear-gradient(135deg, #e486be 0%, #d96aaa 100%);
+}
+
+.serviceCardPurple {
+  background: linear-gradient(135deg, #C58CDB 0%, #b06cc4 100%);
+}
+
+.serviceCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.serviceIcon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .premiumPracticeContainer {
+    padding: 60px 30px 100px;
+  }
+
+  .sectionNumber {
+    font-size: 60px;
+  }
+
+  .sectionTitle {
+    font-size: 44px;
+  }
+
+  .practiceImageWrapper {
+    height: 400px;
+  }
+
+  .servicesWrapper {
+    padding: 40px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .PracticeCon1Div {
-    padding: 0 80px 116px 80px;
+@media screen and (max-width: 768px) {
+  .premiumPracticeContainer {
+    padding: 50px 20px 80px;
+  }
+
+  .practiceSection {
+    margin-bottom: 80px;
+  }
+
+  .sectionTitleWrapper {
+    gap: 15px;
+  }
+
+  .sectionNumber {
+    font-size: 48px;
+  }
+
+  .sectionTitle {
+    font-size: 36px;
+  }
+
+  .practiceImageWrapper {
+    height: 300px;
+    border-radius: 16px;
+  }
+
+  .practiceDescription {
+    font-size: 16px;
+  }
+
+  .servicesWrapper {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .servicesTitle {
+    font-size: 26px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .serviceCard {
+    font-size: 15px;
+    padding: 14px 18px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .PracticeCon1Div {
-    padding: 0 20px 116px 20px;
+@media screen and (max-width: 480px) {
+  .sectionTitleWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  .slimCardUL {
-    display: block;
+
+  .sectionNumber {
+    font-size: 40px;
   }
-  .slimCardLI, .slimCardLI2 {
-    margin-bottom: 30px;
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .practiceImageWrapper {
+    height: 250px;
+  }
+
+  .practiceDescription {
+    font-size: 15px;
+  }
+
+  .serviceCard {
+    font-size: 14px;
   }
 }
