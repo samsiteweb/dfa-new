@@ -297,7 +297,7 @@
 
 @media screen and (max-width: 768px) {
   .lightContactSection {
-    padding: 70px 20px 60px 20px;
+    padding: 70px 20px 40px 20px;
   }
 
   .lightContactTitle {
@@ -335,7 +335,7 @@
 
 @media screen and (max-width: 480px) {
   .lightContactSection {
-    padding: 60px 18px 50px 18px;
+    padding: 60px 18px 35px 18px;
   }
 
   .lightContactTitle {
@@ -369,7 +369,7 @@
 
 @media screen and (max-width: 375px) {
   .lightContactSection {
-    padding: 50px 15px 45px 15px;
+    padding: 50px 15px 30px 15px;
   }
 
   .lightContactTitle {
