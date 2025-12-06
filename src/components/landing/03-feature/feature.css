@@ -120,80 +120,50 @@
   margin: 0 0 35px 0;
 }
 
-/* Education Highlight */
-.educationHighlight {
-  background: linear-gradient(135deg, rgba(197, 140, 219, 0.08), rgba(198, 44, 137, 0.05));
-  border-left: 4px solid #c58cdb;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 25px;
-}
-
-.fellowshipHighlight {
-  background: linear-gradient(135deg, rgba(49, 12, 75, 0.05), rgba(197, 140, 219, 0.08));
-  border-left: 4px solid #310c4b;
-  border-radius: 12px;
-  padding: 25px;
+/* Compact Credentials */
+.compactCredentials {
   margin-bottom: 30px;
 }
 
-.highlightHeader {
+.compactCredRow {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.highlightIcon {
-  width: 24px;
-  height: 24px;
+.credPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, rgba(197, 140, 219, 0.08), rgba(198, 44, 137, 0.05));
+  border: 1.5px solid rgba(197, 140, 219, 0.2);
+  border-radius: 50px;
+  font-family: poppins;
+  font-size: 13px;
+  font-weight: 600;
+  color: #310c4b;
+  transition: all 0.3s ease;
+}
+
+.credPill svg {
+  width: 16px;
+  height: 16px;
   color: #c58cdb;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
-.highlightTitle {
-  font-family: poppins;
-  font-size: 16px;
-  font-weight: 700;
-  color: #310c4b;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.credPill:hover {
+  background: linear-gradient(135deg, #310c4b, #C62C89);
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(49, 12, 75, 0.25);
 }
 
-.highlightContent {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.credentialItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.credDot {
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(135deg, #c58cdb, #C62C89);
-  border-radius: 50%;
-  margin-top: 7px;
-  flex-shrink: 0;
-}
-
-.credText {
-  font-family: poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: #2d3748;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.credText strong {
-  font-weight: 700;
-  color: #310c4b;
+.credPill:hover svg {
+  color: #fff;
 }
 
 /* Expertise Section */
@@ -330,22 +300,18 @@
     font-size: 15px;
   }
 
-  .educationHighlight,
-  .fellowshipHighlight {
-    padding: 20px;
+  .compactCredRow {
+    gap: 8px;
   }
 
-  .highlightIcon {
-    width: 20px;
-    height: 20px;
+  .credPill {
+    font-size: 12px;
+    padding: 9px 14px;
   }
 
-  .highlightTitle {
-    font-size: 14px;
-  }
-
-  .credText {
-    font-size: 13px;
+  .credPill svg {
+    width: 14px;
+    height: 14px;
   }
 
   .expertiseTitle {
@@ -377,12 +343,8 @@
     font-size: 14px;
   }
 
-  .educationHighlight,
-  .fellowshipHighlight {
-    padding: 18px;
-  }
-
-  .credText {
-    font-size: 12px;
+  .credPill {
+    font-size: 11px;
+    padding: 8px 12px;
   }
 }

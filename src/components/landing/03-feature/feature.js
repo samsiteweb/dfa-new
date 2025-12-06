@@ -50,49 +50,28 @@ function FeaturedAttorney() {
                 Governance practice in Nigeria and West Africa. Former Executive Director at Unilever Nigeria Plc.
               </p>
 
-              {/* Education Highlight */}
-              <div className="educationHighlight">
-                <div className="highlightHeader">
-                  <svg className="highlightIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                  </svg>
-                  <h4 className="highlightTitle">Education & Credentials</h4>
-                </div>
-                <div className="highlightContent">
-                  <div className="credentialItem">
-                    <div className="credDot"></div>
-                    <p className="credText"><strong>LL.B</strong> (Bachelor of Laws) - Obafemi Awolowo University</p>
-                  </div>
-                  <div className="credentialItem">
-                    <div className="credDot"></div>
-                    <p className="credText"><strong>LL.M</strong> (Master of Laws) - University of Lagos</p>
-                  </div>
-                  <div className="credentialItem">
-                    <div className="credDot"></div>
-                    <p className="credText"><strong>MBA Leadership</strong> - Walden University, USA</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Fellowship Highlight */}
-              <div className="fellowshipHighlight">
-                <div className="highlightHeader">
-                  <svg className="highlightIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <h4 className="highlightTitle">Professional Recognition</h4>
-                </div>
-                <div className="highlightContent">
-                  <div className="credentialItem">
-                    <div className="credDot"></div>
-                    <p className="credText"><strong>Fellow</strong> - Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN)</p>
-                  </div>
-                  <div className="credentialItem">
-                    <div className="credDot"></div>
-                    <p className="credText"><strong>Fellow</strong> - WIMBOARD Institute</p>
-                  </div>
+              {/* Compact Credentials */}
+              <div className="compactCredentials">
+                <div className="compactCredRow">
+                  <span className="credPill">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                      <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    </svg>
+                    LL.B • LL.M • MBA
+                  </span>
+                  <span className="credPill">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    Fellow - ICSAN
+                  </span>
+                  <span className="credPill">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                    Fellow - WIMBOARD
+                  </span>
                 </div>
               </div>
 
