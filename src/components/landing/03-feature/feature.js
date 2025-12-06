@@ -1,66 +1,125 @@
 import React from "react";
 import "./feature.css";
-import Button from "../../button/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import Lawyer from "../../../assets/img/abidemi.jpg";
-import { Link } from "react-router-dom";
 
 function FeaturedAttorney() {
   return (
-    <div className="featureDiv">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-      >
-        <h4 style={{ color: "#828282" }}>Meet Our Founder & Managing Partner</h4>
-        <h1 style={{ color: "#310C4B" }}>Featured Attorney</h1>
-        <hr className="HR" />
-      </motion.div>
+    <section className="magazineSection">
+      <div className="magazineContainer">
+        
+        <div className="magazineLayout">
+          
+          {/* Left - Full Height Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="magazineImageColumn"
+          >
+            <div className="magazineImageWrapper">
+              <img src={Lawyer} alt="Mrs. Abidemi Ademola" className="magazineImage" />
+              <div className="magazineOverlay">
+                <div className="overlayContent">
+                  <span className="overlayBadge">Managing Partner</span>
+                  <p className="overlayYears">27+ Years of Excellence</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
 
-      <div className="featureDetailsDiv">
-        <motion.div
-          className="featuring"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <img src={Lawyer} alt="" className="lawyerImg" />
-          <h2 className="featureName">Mrs. Abidemi Ademola</h2>
-          <h4 className="featurePosition">Managing Partner</h4>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <p className="featureDetailsPar">
-          Abidemi Ademola is a highly skilled and well experienced Corporate Counsel, Governance
-          Professional and Executive Business Leader with over 27 years of Commercial Law and Corporate Governance practice in Nigeria and West Africa.
-          </p>
-          <p className="featureDetailsPar">
-          Passionately driven by a personal purpose to build a lasting legacy by shaping capability in Law, Governance, Risk and Compliance, her forte is to proactively identify legal, regulatory, compliance and corporate governance risks and develop innovative mitigations/solutions to enable seamless operations and sustainability.
-          </p>
-          <div className="featureDetailsDivInner">
-          <Link to="/about-dfa-solicitors"> <Button>learn more</Button> </Link>
-            {/* <div className="lineDiv">
-            <img src={PurpleLine} alt="" className="lineImg" />
-            <img src={PurpleLineLight} alt="" className="lineImgLight" />
-            <img src={PurpleLine} alt="" className="lineImg" />
-            <img src={PurpleLineLight} alt="" className="lineImgLight" />
-            <img src={PurpleLine} alt="" className="lineImg" />
-            <img src={PurpleLineLight} alt="" className="lineImgLight" />
-            <img src={PurpleLine} alt="" className="lineImg" />
-            <img src={PurpleLineLight} alt="" className="lineImgLight" />
-            </div> */}
-          </div>
-        </motion.div>
+          {/* Right - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="magazineContent"
+          >
+            <div className="contentInner">
+              <p className="contentLabel">Meet Our Leader</p>
+              <h2 className="contentName">Mrs. Abidemi Ademola</h2>
+              <div className="contentDivider"></div>
+              
+              <p className="contentBio">
+                A highly skilled and well-experienced Corporate Counsel, Governance Professional, 
+                and Executive Business Leader with over 27 years of Commercial Law and Corporate 
+                Governance practice in Nigeria and West Africa. Former Executive Director at Unilever Nigeria Plc.
+              </p>
+
+              {/* Education Highlight */}
+              <div className="educationHighlight">
+                <div className="highlightHeader">
+                  <svg className="highlightIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+                  <h4 className="highlightTitle">Education & Credentials</h4>
+                </div>
+                <div className="highlightContent">
+                  <div className="credentialItem">
+                    <div className="credDot"></div>
+                    <p className="credText"><strong>LL.B</strong> (Bachelor of Laws) - Obafemi Awolowo University</p>
+                  </div>
+                  <div className="credentialItem">
+                    <div className="credDot"></div>
+                    <p className="credText"><strong>LL.M</strong> (Master of Laws) - University of Lagos</p>
+                  </div>
+                  <div className="credentialItem">
+                    <div className="credDot"></div>
+                    <p className="credText"><strong>MBA Leadership</strong> - Walden University, USA</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fellowship Highlight */}
+              <div className="fellowshipHighlight">
+                <div className="highlightHeader">
+                  <svg className="highlightIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <h4 className="highlightTitle">Professional Recognition</h4>
+                </div>
+                <div className="highlightContent">
+                  <div className="credentialItem">
+                    <div className="credDot"></div>
+                    <p className="credText"><strong>Fellow</strong> - Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN)</p>
+                  </div>
+                  <div className="credentialItem">
+                    <div className="credDot"></div>
+                    <p className="credText"><strong>Fellow</strong> - WIMBOARD Institute</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Expertise */}
+              <div className="expertiseSection">
+                <h4 className="expertiseTitle">Core Expertise</h4>
+                <div className="expertiseTags">
+                  <span className="expTag">Corporate Law</span>
+                  <span className="expTag">Governance & Compliance</span>
+                  <span className="expTag">Risk Management</span>
+                  <span className="expTag">Executive Leadership</span>
+                </div>
+              </div>
+
+              <Link to="/about" className="magazineButton">
+                <span>View Full Profile</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </motion.div>
+
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 
