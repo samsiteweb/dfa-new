@@ -165,8 +165,18 @@
 }
 
 @media screen and (max-width: 480px) {
+  .whyNeedSection {
+    padding: 60px 18px;
+  }
+
   .whyNeedTitle {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .whyNeedTitle {
+    font-size: 28px;
   }
 
   .whyNeedText {

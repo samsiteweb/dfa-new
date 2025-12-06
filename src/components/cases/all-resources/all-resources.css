@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  max-width: 100%;
 }
 
 .filterButton {
@@ -37,6 +38,8 @@
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .filterButton:hover {

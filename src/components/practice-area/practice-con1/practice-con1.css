@@ -241,6 +241,14 @@
 }
 
 @media screen and (max-width: 480px) {
+  .premiumPracticeContainer {
+    padding: 40px 18px 70px;
+  }
+
+  .practiceSection {
+    margin-bottom: 70px;
+  }
+
   .sectionTitleWrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -257,13 +265,41 @@
 
   .practiceImageWrapper {
     height: 250px;
+    border-radius: 14px;
   }
 
   .practiceDescription {
     font-size: 15px;
   }
 
+  .servicesWrapper {
+    padding: 25px 18px;
+  }
+
+  .servicesTitle {
+    font-size: 24px;
+  }
+
   .serviceCard {
     font-size: 14px;
+    padding: 13px 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .premiumPracticeContainer {
+    padding: 35px 15px 60px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .sectionNumber {
+    font-size: 36px;
+  }
+
+  .practiceImageWrapper {
+    height: 230px;
   }
 }

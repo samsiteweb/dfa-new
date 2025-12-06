@@ -1,6 +1,7 @@
 .buttonContainer {
   display: flex;
   width: fit-content;
+  max-width: 100%;
   padding: 10px 42px;
   justify-content: center;
   align-items: center;
@@ -13,8 +14,25 @@
   font-weight: 600;
   text-transform: capitalize;
   transition: background-color 1s ease-in-out;
+  box-sizing: border-box;
 }
 
 .buttonContainer:hover {
   background: #351950;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .buttonContainer {
+    padding: 10px 32px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buttonContainer {
+    padding: 10px 24px;
+    font-size: 15px;
+    width: 100%;
+  }
 }

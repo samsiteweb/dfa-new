@@ -345,8 +345,22 @@
     min-height: 350px;
   }
 
+  .blogPostHeroContent {
+    padding: 0 20px 35px;
+  }
+
   .postTitle {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .postCategory {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+
+  .backLink {
+    font-size: 13px;
+    margin-bottom: 20px;
   }
 
   .contentHeading {
@@ -366,4 +380,20 @@
   .blogPostCTA h3 {
     font-size: 22px;
   }
+
+  .blogPostCTA .ctaButton {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
 }
+
+@media screen and (max-width: 375px) {
+  .postTitle {
+    font-size: 24px;
+  }
+
+  .blogPostContent {
+    padding: 40px 18px 70px;
+  }
+}
+

@@ -335,6 +335,10 @@
     height: 400px;
   }
 
+  .magazineContent {
+    padding: 50px 25px;
+  }
+
   .contentName {
     font-size: 28px;
   }
@@ -346,5 +350,19 @@
   .credPill {
     font-size: 11px;
     padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .magazineContent {
+    padding: 40px 20px;
+  }
+
+  .contentName {
+    font-size: 26px;
+  }
+
+  .magazineImageColumn {
+    height: 380px;
   }
 }

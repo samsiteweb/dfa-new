@@ -226,15 +226,71 @@
 
 @media screen and (max-width: 480px) {
   .premiumPageBanner {
-    min-height: 35vh;
+    min-height: 32vh;
   }
 
   .pageBannerContent {
     padding: 0 20px;
   }
 
+  .pageBannerBadge {
+    font-size: 10px;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+    gap: 8px;
+  }
+
+  .bannerBadgeIcon {
+    font-size: 14px;
+  }
+
   .pageBannerTitle {
-    font-size: 34px;
+    font-size: 32px;
+  }
+
+  .bannerDecorShape1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bannerDecorShape2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bannerDecorShape3 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .premiumPageBanner {
+    min-height: 30vh;
+  }
+
+  .pageBannerContent {
+    padding: 0 18px;
+  }
+
+  .pageBannerTitle {
+    font-size: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  .pageBannerBadge {
+    font-size: 9px;
+    padding: 7px 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pageBannerTitle {
+    font-size: 26px;
+  }
+
+  .pageBannerContent {
+    padding: 0 15px;
   }
 }
 

@@ -49,6 +49,7 @@
   .logoImg {
     width: 82px;
     height: auto;
+    max-width: 100%;
   }
   .options {
     display: none;
@@ -172,6 +173,36 @@
   .checkbox:checked + .button .icon::after {
     top: 0;
     transform: rotate(-135deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerDiv {
+    padding: 10px 18px;
+  }
+
+  .logoImg {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headerDiv {
+    padding: 10px 15px;
+  }
+
+  .logoImg {
+    width: 70px;
+  }
+
+  .button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 8px 18px;
   }
 }
 

@@ -493,6 +493,50 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footerContent {
+    padding: 0 18px;
+  }
+
+  .footerLogo {
+    width: 120px;
+  }
+
+  .footerTagline {
+    font-size: 13px;
+  }
+
+  .footerNav {
+    gap: 20px;
+  }
+
+  .footerNavTitle {
+    font-size: 14px;
+  }
+
+  .footerNavLink {
+    font-size: 12px;
+  }
+
+  .footerContactLink {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footerContent {
+    padding: 0 15px;
+  }
+
+  .footerLogo {
+    width: 110px;
+  }
+
+  .footerTagline {
+    font-size: 12px;
+  }
+}
+
 /* Smooth entrance animation */
 @keyframes fadeInUp {
   from {

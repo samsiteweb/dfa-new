@@ -226,3 +226,43 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .aboutDfaContainer {
+    padding: 70px 18px;
+  }
+
+  .aboutDfaTitle {
+    font-size: 32px;
+  }
+
+  .aboutDfaText {
+    font-size: 15px;
+  }
+
+  .aboutDfaValuesSection {
+    padding: 30px 22px;
+  }
+
+  .aboutDfaValuesTitle {
+    font-size: 26px;
+  }
+
+  .valueText {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .aboutDfaContainer {
+    padding: 60px 15px;
+  }
+
+  .aboutDfaTitle {
+    font-size: 30px;
+  }
+
+  .aboutDfaValuesSection {
+    padding: 25px 18px;
+  }
+}

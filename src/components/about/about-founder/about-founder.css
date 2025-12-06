@@ -351,3 +351,61 @@
     padding: 0 25px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .aboutFounderContainer {
+    padding: 50px 18px;
+  }
+
+  .aboutFounderTop h1 {
+    font-size: 32px;
+  }
+
+  .founderName {
+    font-size: 28px;
+  }
+
+  .founderPosition {
+    font-size: 15px;
+    padding: 6px 16px;
+  }
+
+  .founderIntro {
+    font-size: 14px;
+  }
+
+  .aboutFounderBottom {
+    margin-top: 50px;
+    gap: 35px;
+  }
+
+  .founderSkills {
+    font-size: 22px;
+  }
+
+  .founderSkillsP {
+    font-size: 14px;
+  }
+
+  .aboutFounderBottom > div {
+    padding: 25px 20px;
+  }
+
+  .aboutFounderBottom ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .aboutFounderContainer {
+    padding: 45px 15px;
+  }
+
+  .aboutFounderTop h1 {
+    font-size: 30px;
+  }
+
+  .founderName {
+    font-size: 26px;
+  }
+}
