@@ -1,14 +1,8 @@
 import React from 'react';
-import "./about-banner.css";
-
-import BannerImg from "../../../assets/img/about-banner.png";
+import PageBanner from '../../common/page-banner/PageBanner';
 
 const AboutBanner = () => {
-  return (
-    <div className='AboutBannerDiv'>
-      <img src={BannerImg} alt='' className='AboutbannerImg' />
-    </div>
-  )
+  return <PageBanner title="About Us" subtitle="Who We Are" />
 }
 
 export default AboutBanner;

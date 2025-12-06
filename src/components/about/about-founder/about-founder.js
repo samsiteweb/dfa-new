@@ -14,8 +14,8 @@ const AboutFounder = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <h4 style={{ color: "#828282" }}>Welcome To DFA Solicitors</h4>
-        <h1 style={{ color: "#310C4B" }}>Firm Overview</h1>
+        <h4 style={{ color: "#828282" }}>Leadership</h4>
+        <h1 style={{ color: "#310C4B" }}>Meet Our Managing Partner</h1>
         <hr className="HR" />
       </motion.div>
 
@@ -36,7 +36,7 @@ const AboutFounder = () => {
           transition={{ duration: 0.7 }}
         >
           <h4 className="founderName">Mrs. Abidemi Ademola</h4>
-          <p className="founderPosition">Senior Partner</p>
+          <p className="founderPosition">Managing Partner</p>
           <p className="founderIntro">
               A highly skilled and well experienced Corporate Counsel,
               Governance Professional and Executive Business Leader with over 27

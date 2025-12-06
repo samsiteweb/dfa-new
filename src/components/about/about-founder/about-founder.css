@@ -1,113 +1,352 @@
+/* Premium About Founder Section */
 .aboutFounderContainer {
-  padding: 116px 156px;
+  padding: 120px 156px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Add subtle background decoration */
+.aboutFounderContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(197, 140, 219, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(198, 44, 137, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .aboutFounderTop {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
 }
+
+.aboutFounderTop h4 {
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #828282;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.aboutFounderTop h1 {
+  font-family: playfair;
+  font-size: 52px;
+  font-weight: 700;
+  color: #310C4B;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.HR {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  border: none;
+  border-radius: 2px;
+  margin: 0;
+}
+
 .aboutFounderMiddle {
   display: flex;
-  gap: 26px;
+  gap: 50px;
   margin-top: 60px;
+  position: relative;
+  z-index: 1;
+  align-items: start;
 }
+
 .founderImg {
   width: 609px;
   height: 542.093px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(49, 12, 75, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  object-fit: cover;
 }
+
+.founderImg:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(49, 12, 75, 0.2);
+}
+
 .aboutFounderDetailsDiv {
-  padding: 0 20px;
+  padding: 20px 20px 20px 0;
   position: relative;
+  flex: 1;
 }
+
 .founderName {
   color: #310c4b;
   font-family: playfair;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   text-transform: capitalize;
-  width: 373px;
+  margin-bottom: 12px;
+  line-height: 1.2;
 }
+
 .founderPosition {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #9338b6;
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, rgba(147, 56, 182, 0.08), rgba(198, 44, 137, 0.05));
+  border-radius: 20px;
 }
+
 .founderIntro {
   text-align: justify;
-  font-size: 18px;
-  line-height: 33px;
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #4a5568;
   display: flex;
   flex-wrap: wrap-reverse;
 }
 
-/* .aboutFounderBottom {} */
-.founderSkills {
-  font-size: 26px;
-  margin-top: 72px;
-}
-.founderSkillsHR {
-  width: 41px;
-  border: 1px solid #80319f;
-}
-.founderSkillsP {
-  font-family: quicksand;
-  font-size: 18px;
-  margin-top: 20px;
-  line-height: 33px;
-  text-align: justify;
+/* Premium About Founder Bottom Section */
+.aboutFounderBottom {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
 }
 
+.founderSkills {
+  font-family: playfair;
+  font-size: 32px;
+  font-weight: 700;
+  color: #310C4B;
+  margin: 0 0 20px 0;
+}
+
+.founderSkillsHR {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+.founderSkillsP {
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 1.9;
+  text-align: justify;
+  color: #4a5568;
+}
+
+.aboutFounderBottom > div {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutFounderBottom > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.aboutFounderBottom > div:hover::before {
+  transform: scaleX(1);
+}
+
+.aboutFounderBottom > div:hover {
+  transform: translateY(-6px);
+  border-color: rgba(197, 140, 219, 0.4);
+  box-shadow: 0 20px 50px rgba(49, 12, 75, 0.12);
+}
+
+.aboutFounderBottom ul {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.aboutFounderBottom ul li {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 12px;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.aboutFounderBottom ul li::marker {
+  color: #9338b6;
+  font-size: 1.2em;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .aboutFounderContainer {
-    padding: 80px 156px;
+    padding: 100px 100px;
   }
+
+  .aboutFounderTop h1 {
+    font-size: 48px;
+  }
+
   .aboutFounderMiddle {
     display: block;
   }
+
   .founderImg {
     width: 100%;
     height: auto;
+    margin-bottom: 40px;
   }
+
   .aboutFounderDetailsDiv {
-    margin-top: 30px;
+    margin-top: 0;
     padding: 0;
+  }
+
+  .founderName {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .aboutFounderContainer {
-    padding: 40px 80px;
+    padding: 80px 80px;
   }
+
+  .aboutFounderTop h1 {
+    font-size: 44px;
+  }
+
   .aboutFounderMiddle {
     display: block;
   }
+
   .founderImg {
     width: 100%;
     height: auto;
+    margin-bottom: 40px;
   }
+
   .aboutFounderDetailsDiv {
-    margin-top: 30px;
+    margin-top: 0;
     padding: 0;
+  }
+
+  .founderName {
+    width: 100%;
+    font-size: 38px;
+  }
+
+  .founderSkills {
+    font-size: 28px;
+  }
+
+  .aboutFounderBottom > div {
+    padding: 36px 32px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .aboutFounderContainer {
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
+
+  .aboutFounderTop h4 {
+    font-size: 12px;
+  }
+
+  .aboutFounderTop h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
   .aboutFounderMiddle {
     display: block;
+    gap: 30px;
   }
+
   .founderImg {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
   }
+
   .aboutFounderDetailsDiv {
-    margin-top: 30px;
+    margin-top: 0;
     padding: 0;
   }
+
   .founderName {
     width: 100%;
+    font-size: 30px;
   }
+
+  .founderPosition {
+    font-size: 16px;
+    padding: 7px 18px;
+  }
+
+  .founderIntro {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .aboutFounderBottom {
+    margin-top: 60px;
+    gap: 40px;
+  }
+
+  .founderSkills {
+    font-size: 24px;
+  }
+
+  .founderSkillsP {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .aboutFounderBottom > div {
+    padding: 28px 24px;
+  }
+
+  .aboutFounderBottom ul li {
+    font-size: 15px;
+  }
+
   ul {
     padding: 0 25px;
   }

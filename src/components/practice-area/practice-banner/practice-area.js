@@ -1,14 +1,8 @@
 import React from 'react';
-import "./practice-area.css";
-
-import PracticeImg from "../../../assets/img/practice_area.png";
+import PageBanner from '../../common/page-banner/PageBanner';
 
 const PracticeBanner = () => {
-  return (
-    <div>
-      <img src={PracticeImg} alt='' className='PracticebannerImg' />
-    </div>
-  )
+  return <PageBanner title="Practice Areas" subtitle="Our Expertise" />
 }
 
 export default PracticeBanner;

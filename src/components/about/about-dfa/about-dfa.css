@@ -1,115 +1,228 @@
-.aboutFounderContainer {
-  padding: 116px 156px;
+/* Simple Premium About DFA Section */
+.aboutDfaContainer {
+  padding: 120px 156px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+  position: relative;
+  overflow: hidden;
 }
-.aboutFounderTop {
+
+/* Subtle background decoration */
+.aboutDfaContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(197, 140, 219, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(198, 44, 137, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aboutDfaHeader {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.aboutFounderMiddle {
-  display: flex;
-  gap: 26px;
-  margin-top: 60px;
-}
-.founderImg {
-  width: 609px;
-  height: 542.093px;
-}
-.aboutFounderDetailsDiv {
-  padding: 0 10px;
   position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
 }
-.founderName {
-  color: #310c4b;
+
+.aboutDfaSubtitle {
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #828282;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.aboutDfaTitle {
   font-family: playfair;
-  font-size: 36px;
+  font-size: 52px;
   font-weight: 700;
-  text-transform: capitalize;
-  width: 373px;
+  color: #310C4B;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
 }
-.founderPosition {
-  margin-bottom: 18px;
+
+.HR {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #9338b6, #C62C89);
+  border: none;
+  border-radius: 2px;
+  margin: 0;
 }
-.founderIntro {
-  text-align: justify;
+
+.aboutDfaContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutDfaTextSection {
+  margin-bottom: 60px;
+}
+
+.aboutDfaText {
+  font-family: poppins;
   font-size: 18px;
-  line-height: 33px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #4a5568;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.aboutDfaValuesSection {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  padding: 50px 60px;
+  box-shadow: 0 10px 40px rgba(49, 12, 75, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.aboutDfaValuesSection:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(49, 12, 75, 0.1);
+  border-color: rgba(197, 140, 219, 0.3);
+}
+
+.aboutDfaValuesTitle {
+  font-family: playfair;
+  font-size: 32px;
+  font-weight: 700;
+  color: #310C4B;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.aboutDfaValuesList {
   display: flex;
-  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 60px;
 }
 
-/* .aboutFounderBottom {} */
-.founderSkills {
-  font-size: 26px;
-  margin-top: 72px;
-}
-.founderSkillsHR {
-  width: 41px;
-  border: 1px solid #80319f;
-}
-.founderSkillsP {
-  font-family: quicksand;
-  font-size: 18px;
-  margin-top: 20px;
-  line-height: 33px;
-  text-align: justify;
-}
-.founderSkillsList {
-  line-height: 15px;
-  margin-left: 30px;
+.aboutDfaValue {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
+.valueIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #9338b6, #C62C89);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.valueText {
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+  color: #310C4B;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .aboutFounderMiddle {
-    display: block;
+  .aboutDfaContainer {
+    padding: 100px 100px;
   }
-  .founderImg {
-    width: 100%;
-    height: auto;
+
+  .aboutDfaTitle {
+    font-size: 48px;
   }
-  .aboutFounderDetailsDiv {
-    margin-top: 30px;
-    padding: 0;
+
+  .aboutDfaValuesList {
+    gap: 50px;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .aboutFounderContainer {
-    padding: 116px 80px;
+  .aboutDfaContainer {
+    padding: 100px 80px;
   }
-  .aboutFounderMiddle {
-    display: block;
+
+  .aboutDfaTitle {
+    font-size: 44px;
   }
-  .founderImg {
-    width: 100%;
-    height: auto;
+
+  .aboutDfaText {
+    font-size: 17px;
   }
-  .aboutFounderDetailsDiv {
-    margin-top: 30px;
-    padding: 0;
+
+  .aboutDfaValuesSection {
+    padding: 40px 50px;
+  }
+
+  .aboutDfaValuesList {
+    gap: 40px;
+  }
+
+  .valueText {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .aboutFounderContainer {
-    padding: 116px 20px;
+  .aboutDfaContainer {
+    padding: 80px 20px;
   }
-  .aboutFounderMiddle {
-    display: block;
+
+  .aboutDfaSubtitle {
+    font-size: 12px;
   }
-  .founderImg {
-    width: 100%;
-    height: auto;
+
+  .aboutDfaTitle {
+    font-size: 36px;
+    text-align: center;
   }
-  .aboutFounderDetailsDiv {
-    margin-top: 30px;
-    padding: 0;
+
+  .aboutDfaText {
+    font-size: 16px;
+    text-align: left;
   }
-  .founderName {
-    width: 100%;
+
+  .aboutDfaValuesSection {
+    padding: 36px 28px;
   }
-  ul {
-    padding: 0 25px;
+
+  .aboutDfaValuesTitle {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .aboutDfaValuesList {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .aboutDfaValue {
+    gap: 16px;
+  }
+
+  .valueIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .valueText {
+    font-size: 18px;
   }
 }
