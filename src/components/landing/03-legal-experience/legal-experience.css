@@ -211,7 +211,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 80px;
 }
 
