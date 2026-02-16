@@ -10,7 +10,8 @@ const Checkin = () => {
   return (
     <div className="checkinContainer">
       <div className="checkinContainerInner">
-        <div className="checkinCard">
+        {/* Book Appointment - Temporarily commented out */}
+        {/* <div className="checkinCard">
           <div className="checkiniconsDiv">
             <img src={calender} alt="" className="checkinImg" />
           </div>
@@ -22,7 +23,7 @@ const Checkin = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="checkinCard">
           <div className="checkiniconsDiv">

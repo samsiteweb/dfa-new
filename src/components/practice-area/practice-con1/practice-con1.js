@@ -125,12 +125,13 @@ const PracticeCon1 = () => {
 
         <div className="practiceContent">
           <p className="practiceDescription">
-            Corporate law is a specialized legal field that deals with the
-            formation, structure, management, and dissolution of corporations and
-            other business entities. It encompasses a wide range of legal matters
-            related to businesses and their operations, focusing on the legal
-            rights, responsibilities, and obligations of corporations, shareholders,
-            directors, officers, and other stakeholders.
+            Corporate Law is a core practice area of our firm, advising businesses 
+            at every stage of their lifecycle. We provide comprehensive legal support 
+            on the formation, structuring, governance, and dissolution of companies 
+            and other business entities. Our services address the legal rights, 
+            responsibilities, and obligations of corporations, shareholders, directors, 
+            officers, and key stakeholders, ensuring compliance with applicable laws 
+            while supporting efficient and strategic business operations.
           </p>
         </div>
 
