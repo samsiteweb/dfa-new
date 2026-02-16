@@ -53,16 +53,6 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  const handleDotClick = (index) => {
-    if (index !== currentSlide) {
-      setIsVisible(false);
-      setTimeout(() => {
-        setCurrentSlide(index);
-        setIsVisible(true);
-      }, 500);
-    }
-  };
-
   const currentSlideData = slides[currentSlide];
 
   return (

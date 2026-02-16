@@ -6,8 +6,8 @@ import LegalExperience from "../components/landing/03-legal-experience/legal-exp
 import Help from "../components/landing/04-help/help";
 import WhyNeed from "../components/landing/05-why-need/why-need";
 import FeaturedAttorney from "../components/landing/03-feature/feature";
-import Pricing from "../components/pricing/pricing";
-import Article from "../components/article/article";
+// import Pricing from "../components/pricing/pricing";
+// import Article from "../components/article/article";
 import ContactForm from "../components/contact-form/contact-form";
 
 const Landing = () => {
