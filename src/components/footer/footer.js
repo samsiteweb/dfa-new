@@ -72,7 +72,7 @@ const Footer = () => {
               <Link to="/practice-area#data-privacy" className="footerNavLink">Data Privacy</Link>
               <Link to="/practice-area#corporate" className="footerNavLink">Corporate Law</Link>
               <Link to="/practice-area#employment" className="footerNavLink">Employment</Link>
-              <Link to="/practice-area#litigation" className="footerNavLink">Litigation</Link>
+              <Link to="/practice-area#dispute-resolution" className="footerNavLink">Dispute Resolution</Link>
             </div>
 
             {/* Contact Info */}

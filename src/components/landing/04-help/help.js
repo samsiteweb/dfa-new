@@ -76,8 +76,8 @@ const Help = () => {
     { 
       icon: git, 
       title: "Dispute Resolution", 
-      description: "Skilled representation in litigation, arbitration, and alternative dispute resolution mechanisms.",
-      category: "Litigation",
+      description: "Skilled representation in arbitration and alternative dispute resolution mechanisms.",
+      category: "Dispute Resolution",
       featured: false
     },
     { 
@@ -111,7 +111,7 @@ const Help = () => {
       Innovation: { primary: "#8b3aa6", gradient: "linear-gradient(135deg, #8b3aa6, #6e2d85)" },
       Property: { primary: "#ba52d4", gradient: "linear-gradient(135deg, #ba52d4, #9c3fb8)" },
       Corporate: { primary: "#310c4b", gradient: "linear-gradient(135deg, #310c4b, #1e0729)" },
-      Litigation: { primary: "#d946a6", gradient: "linear-gradient(135deg, #d946a6, #b8368a)" },
+      "Dispute Resolution": { primary: "#d946a6", gradient: "linear-gradient(135deg, #d946a6, #b8368a)" },
       Development: { primary: "#a64db3", gradient: "linear-gradient(135deg, #a64db3, #883d94)" },
       Compliance: { primary: "#7c2d9e", gradient: "linear-gradient(135deg, #7c2d9e, #5f2279)" },
       Documentation: { primary: "#b75cc7", gradient: "linear-gradient(135deg, #b75cc7, #9745a8)" }

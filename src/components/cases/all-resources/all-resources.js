@@ -58,8 +58,8 @@ const sampleBlogPosts = [
   },
   {
     id: 6,
-    title: "Dispute Resolution: Arbitration vs. Litigation in Nigeria",
-    excerpt: "When conflicts arise, choosing the right dispute resolution method is crucial. Compare arbitration and litigation to determine the best approach for your business disputes.",
+    title: "Dispute Resolution: Arbitration in Nigeria",
+    excerpt: "When conflicts arise, choosing the right dispute resolution method is crucial. Learn about arbitration and alternative approaches to determine the best strategy for your business disputes.",
     category: "Dispute Resolution",
     author: "Mrs. Abidemi Ademola",
     date: "November 10, 2024",
